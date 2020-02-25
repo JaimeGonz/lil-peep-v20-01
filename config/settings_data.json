@@ -85,10 +85,7 @@
       }
     },
     "content_for_index": [
-      "hero",
-      "featured-collections",
-      "feature-row",
-      "slideshow"
+      "hero"
     ]
   },
   "presets": {
