@@ -1,0 +1,46 @@
+img {
+  height: 100%;
+}
+
+.header{
+  background:white;
+  height: 49px;
+  position: relative;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.header__nav{
+  margin-top: 0;
+  padding: 10px 0 0 0;
+}
+
+.header__nav li{
+  display: inline-block;
+}
+
+.header__menu-button {
+  background-color: transparent;
+  border: none;
+  height: 12.5px;
+  padding: 0;
+}
+
+.header__menu{
+  margin-right: 55px;
+}
+
+.header__logo{
+  height: 24.4px;
+  width:20.8px;
+}
+
+.header__cart-counter{
+  margin-left: 55px;
+}
+
+.header__cart-icon{
+  height: 17.7px;
+  width: 21px;
+}

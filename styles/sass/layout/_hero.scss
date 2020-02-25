@@ -1,0 +1,46 @@
+.treasure-island{
+  position: relative;
+}
+
+.treasure-island__background{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 256px !important;
+  transform: translate(0px,-55px);
+  width: 100% !important;
+}
+
+.treasure-island__content{
+  background-image: linear-gradient(178deg, hsla(30, 75%, 94%, 0) 3%,
+   hsl(30, 75%, 94%) 55%);
+   height: 230px;
+   transform: translate(0px, -210px);
+   width: 100%;
+}
+
+.treasure-island__content--title{
+  font-family: 'Roboto Condensed';
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.004em;
+  margin-bottom: 0;
+  padding-top: 96px;
+  text-align: center;
+}
+
+.treasure-island__content--text{
+  font-size: 16px;
+  margin: 5px 14px 15px 14px;
+  text-align: center;
+}
+
+.treasure-island__content--button{
+  background-color: #4a90e2;
+  border: none;
+  color:white;
+  font-size: 17px;
+  font-weight: 500;
+  height: 40px;
+  margin-left: 20px;
+  width: 306px;
+}
