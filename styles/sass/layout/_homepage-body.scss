@@ -28,3 +28,103 @@
   margin-top: 0px;
   line-height: 35px;
 }
+
+//Sailors and pirates kit section
+
+.sailors-and-pirates{
+  position: relative;
+  height: 250px;
+}
+
+.sailors-and-pirates__background{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 210px;
+  width: 100%;
+}
+
+.sailors-and-pirates__content{
+  background-image: linear-gradient(to bottom, hsla(0, 0%, 94%, 0) 12%, hsl(0, 0%, 93%) 81%);
+   height: 230px;
+   transform: translate(0px, -210px);
+   width: 100%;
+}
+
+.sailors-and-pirates__content--title{
+  font-family: 'Roboto Condensed';
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.004em;
+  margin-bottom: 0;
+  padding-top: 80px;
+  text-align: center;
+}
+
+.sailors-and-pirates__content--text{
+  font-size: 15px;
+  margin: 5px 14px 15px 14px;
+  text-align: center;
+}
+
+.sailors-and-pirates__content--button{
+  background: none;
+  border: solid 2px hsl(212, 16%, 46%);
+  border-radius: 2px;
+  color:hsl(212, 16%, 46%);
+  font-size: 17px;
+  font-weight: 500;
+  height: 40px;
+  margin-left: 7px;
+  width: 306px;
+}
+
+//Archeologist section
+
+.archeologist{
+  position: relative;
+  height: 280px;
+}
+
+.archeologist__background{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 210px;
+  width: 100%;
+}
+
+.archeologist__content{
+  background-image: linear-gradient(to bottom, hsla(33, 39%, 58%, 0), hsl(33, 38%, 58%) 77%);
+  height:220px;
+  transform: translate(0px, -210px);
+  width: 100%;
+}
+
+.archeologist__content--title{
+  font-family: 'Roboto Condensed';
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.004em;
+  margin-bottom: 0;
+  padding-top: 71px;
+  text-align: center;
+  color: #FFF;
+}
+
+.archeologist__content--text{
+  font-size: 15px;
+  margin: 5px 14px 15px 14px;
+  text-align: center;
+  color: #FFF;
+}
+
+.archeologist__content--button{
+  background-color: hsla(0, 0%, 100%, 0.2);
+  border: solid 2px #FFF;
+  border-radius: 2px;
+  color:#FFF;
+  font-size: 17px;
+  font-weight: 500;
+  height: 40px;
+  margin-left: 7px;
+  width: 306px;
+}
