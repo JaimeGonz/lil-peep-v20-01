@@ -32,6 +32,10 @@
           "text_size": "large"
         }
       },
+      "homepage": {
+        "type": "homepage-body",
+        "settings": {}
+      },
       "slideshow": {
         "type": "slideshow",
         "blocks": {
@@ -85,7 +89,8 @@
       }
     },
     "content_for_index": [
-      "hero"
+      "hero",
+      "homepage"
     ]
   },
   "presets": {
@@ -121,6 +126,10 @@
           "settings": {
             "text_size": "large"
           }
+        },
+        "homepage": {
+          "type": "homepage-body",
+          "settings": {}
         },
         "slideshow": {
           "type": "slideshow",

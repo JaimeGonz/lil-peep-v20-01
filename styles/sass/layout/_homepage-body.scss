@@ -1,3 +1,7 @@
+body{
+  background-color: hsl(0, 0%, 98%);
+}
+
 .discount{
   height: 150px;
   background-repeat: no-repeat;
@@ -207,23 +211,100 @@
 }
 
 .outdoors__content {
-  height: 85px;
   background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 0%));
+  height: 85px;
   mix-blend-mode: multiply;
   opacity: 0.7;
   transform: translate(0px, -85px);
 }
 
 .outdoors__content--title{
+  color: #FFF;
   font-family: 'Roboto Condensed';
   font-size: 30px;
   font-weight: 500;
   letter-spacing: 0.004em;
   margin-bottom: 0;
+  margin-left: 10px;
   padding-top: 71px;
   text-align: center;
-  color: #FFF;
-  transform: translate(0px, -230px);
   text-align: left;
-  margin-left: 10px;
+  transform: translate(0px, -230px);
 }
+
+//scroll up button
+.scroll-up {
+  margin-top: 20px;
+  text-align: center;
+  background-color: hsl(0,0%,98%);
+  margin-bottom: 20px;
+}
+
+.scroll-up__link{
+  text-decoration: none;
+  width: 150px;
+}
+
+.scroll-up__button {
+  background-color: hsl(212, 72%, 59%);
+  border-radius: 2px;
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  height: 40px;
+  width: 150px;
+  padding-left: 28px;
+  text-align: left;
+}
+
+.scroll-up__icon {
+  fill: #FFF;
+  height: 20px;
+  transform: translate(-46px,5px);
+  margin-right: -23px;
+}
+
+//footer
+
+.footer {
+  background-color: hsl(0,0%,100%);
+  border: solid 1px hsl(0,0%,92%);
+  color: hsl(212,16%,46%);
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer__title {
+  font-size: 16px;
+}
+
+.footer__button {
+  background: none;
+  border-radius: 3px;
+  border: solid 2px hsl(208, 10%, 50%);
+  height: 33px;
+  margin: 5px 1px;
+  width: 98px;
+}
+
+.footer__button--icon {
+  fill: hsl(208, 10%, 50%);
+  height: 15px;
+}
+
+.footer__input{
+  background-color: hsl(0, 0%, 98%);
+  border-radius: 2px;
+  border: solid 2px hsl(0, 0%, 82%);
+  font-size: 15px;
+  height: 35px;
+  margin-bottom: 30px;
+  padding-left: 20px;
+  width: 280px;
+}
+
+
+
