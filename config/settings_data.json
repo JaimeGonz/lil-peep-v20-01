@@ -64,8 +64,12 @@
         "type": "feature-row",
         "settings": {}
       },
-      "footer": {
-        "type": "footer",
+      "last": {
+        "type": "last",
+        "settings": {}
+      },
+      "footer2": {
+        "type": "footer2",
         "blocks": {
           "link_list": {
             "type": "link_list",
@@ -90,7 +94,8 @@
     },
     "content_for_index": [
       "hero",
-      "homepage"
+      "homepage",
+      "last"
     ]
   },
   "presets": {
@@ -159,8 +164,12 @@
           "type": "feature-row",
           "settings": {}
         },
-        "footer": {
-          "type": "footer",
+        "last": {
+          "type": "last",
+          "settings": {}
+        },
+        "footer2": {
+          "type": "footer2",
           "blocks": {
             "link_list": {
               "type": "link_list",
@@ -401,8 +410,8 @@
             "cart_notes_enable": false
           }
         },
-        "footer": {
-          "type": "footer",
+        "footer2": {
+          "type": "footer2",
           "blocks": {
             "link_list": {
               "type": "link_list",
