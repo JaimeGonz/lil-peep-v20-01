@@ -9,40 +9,40 @@ img {
   text-align: center;
   width: 100%;
   z-index: 2;
-}
 
-.header__nav{
-  margin-top: 0;
-  padding: 10px 0 0 0;
-}
+  &__nav{
+    margin-top: 0;
+    padding: 10px 0 0 0;
+  }
 
-.header__nav li{
-  display: inline-block;
-  color: hsl(212, 16%, 46%);
-}
+  &__nav li{
+    color: hsl(212, 16%, 46%);
+    display: inline-block;
+  }
 
-.header__menu-button {
-  background-color: transparent;
-  border: none;
-  height: 12.5px;
-  padding: 0;
-}
+  &__menu-button {
+    background-color: transparent;
+    border: none;
+    height: 12.5px;
+    padding: 0;
+  }
 
-.header__menu{
-  margin-right: 55px;
-  color: hsl(212, 16%, 46%);
-}
+  &__menu{
+    color: hsl(212, 16%, 46%);
+    margin-right: 55px;
+  }
 
-.header__logo{
-  height: 24.4px;
-  width:20.8px;
-}
+  &__logo{
+    height: 24.4px;
+    width:20.8px;
+  }
 
-.header__cart-counter{
-  margin-left: 55px;
-}
+  &__cart-counter{
+    margin-left: 55px;
+  }
 
-.header__cart-icon{
-  height: 17.7px;
-  width: 21px;
+  &__cart-icon{
+    height: 17.7px;
+    width: 21px;
+  }
 }

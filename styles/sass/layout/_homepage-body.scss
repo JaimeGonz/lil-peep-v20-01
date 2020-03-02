@@ -133,6 +133,149 @@ body{
   width: 306px;
 }
 
+//featured-collections
+
+.featured-toys {
+  height: 350px;
+}
+
+.something__ul{
+  display: flex;
+  padding-left: 0;
+}
+
+.collection-slider{
+
+  .slick-track{
+    display: flex;
+  }
+  .product-card{
+    width: 100%;
+  }
+  .slick-prev{
+    left: 0;
+    z-index: 99;
+    height: 40px;
+  }
+  .slick-next{
+    right: 0;
+    z-index: 99;
+    height: 40px;
+  }
+  overflow: hidden;
+}
+
+.product-title{
+  font-size: 10px;
+  color: #637488;
+}
+
+.product-price{
+  font-size:15px;
+  color: #99437E;
+}
+
+.product-button{
+  background-color: #4a90e2;
+  border: none;
+  border-radius: 2px;
+  color:white;
+  font-size: 17px;
+  font-weight: 500;
+  height: 40px;
+  margin-left: 7px;
+  width: 306px;
+}
+
+//Theme.liquid
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  //height: 350px;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  width: 320px;
+  min-height: 1px;
+  [dir="rtl"] & {
+    float: right;
+  }
+  img {
+    display: block;
+  }
+  &.slick-loading img {
+    display: none;
+  }
+
+  display: none;
+
+  &.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized & {
+    display: block;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 //Wooden toys
 .wooden-toys {
   height: 150px;

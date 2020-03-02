@@ -94,8 +94,7 @@
     },
     "content_for_index": [
       "hero",
-      "homepage",
-      "last"
+      "homepage"
     ]
   },
   "presets": {
