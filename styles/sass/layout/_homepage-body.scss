@@ -78,8 +78,11 @@ body{
   font-size: 17px;
   font-weight: 500;
   height: 40px;
-  margin-left: 7px;
+  // margin-left: 7px;
   width: 306px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 //Archeologist section
@@ -129,8 +132,11 @@ body{
   font-size: 17px;
   font-weight: 500;
   height: 40px;
-  margin-left: 7px;
+  // margin-left: 7px;
   width: 306px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
 
 //featured-collections

@@ -1,4 +1,4 @@
-<div class="header" id="header">
+<div class="header header__mobile--visibility" id="header">
   <ul class="header__nav">
     <button aria-controls="MobileNav" aria-expanded="false" aria-label="Menú" class="header__menu-button"><img src="{{section.settings.menu_icon | img_url: 'small'}}"></button>
     <span class="header__menu">Menu</span>
@@ -9,6 +9,43 @@
       {{section.settings.cart_icon | img_url: '100x' | img_tag}}
     </li>
   </ul>
+</div>
+
+<div class="header-desktop header__desktop--visibility" id="header__desktop">
+
+  <div class="header-desktop__container">
+    <a class="header-desktop__container__logo"><img src="{{section.settings.image_logo | img_url: '30x'}}"></a>
+    <span class="header-desktop__container__title">LIL PEEP</span>
+  </div>
+
+  <div class="header-desktop__top-menu">
+    <form action="/search" class="search" style="display: inline; margin-right: 53px;">
+      <input class=" header-desktop__top-menu__input" type="text" placeholder="Search" name="q" value="{{ search.terms | escape }}"/>
+      <button class="header-desktop__top-menu__input__btn" type="submit">
+        <svg class="header-desktop__top-menu__input__icon" id="Capa_1" style="enable-background:new 0 0 512.005 512.005;" version="1.1" viewbox="0 0 512.005 512.005" x="0px" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" y="0px">
+          <path d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667
+                                                                                          			S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6
+                                                                                          			c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z
+                                                                                          			 M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z"/>
+        </svg>
+      </button>
+    </form>
+    <a class="links--top" href="#Login">Log In</a>
+    <a class="links--top" href="#SignUp">Sign Up</a>
+  </div>
+
+  <nav class="site-nav" role="navigation">
+    {% for link in linklists.main-menu.links %}
+      <a class="site-nav__links" href="{{ link.url }}">{{ link.title }}</a>
+    {% endfor %}
+  </nav>
+  <div class="header-desktop__cart">
+    <span class="header-desktop__cart__counter">Cart
+      {{ cart.item_count }}</span>
+    <a class="header-desktop__cart-icon">
+      {{section.settings.cart_icon | img_url: '20x' | img_tag}}
+    </a>
+  </div>
 </div>
 
 <nav class="mobile-nav-wrapper medium-up--hide" role="navigation">

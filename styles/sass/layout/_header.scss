@@ -2,6 +2,14 @@ img {
   height: 100%;
 }
 
+.header__desktop--visibility {
+ display: none;
+}
+
+.header__mobile--visibility {
+  display: block;
+}
+
 .header{
   background:white;
   height: 49px;
@@ -45,4 +53,152 @@ img {
     height: 17.7px;
     width: 21px;
   }
+}
+
+
+@media (min-width: 600px) {
+
+  .header__mobile--visibility {
+    display: none;
+  }
+
+  .header__desktop--visibility {
+    display: block;
+   }
+
+  .header-desktop{
+    // width: 100%;
+    height: 171px;
+    border: solid 1px hsl(0, 0%, 92%);
+    background-color: hsl(0, 0%, 100%);
+
+    &__nav{
+      margin-top: 0;
+      padding: 10px 0 0 0;
+    }
+
+    &__nav li{
+      color: hsl(212, 16%, 46%);
+      display: inline-block;
+    }
+
+    &__menu-button {
+      background-color: transparent;
+      border: none;
+      height: 12.5px;
+      padding: 0;
+    }
+
+    &__menu{
+      color: hsl(212, 16%, 46%);
+      margin-right: 55px;
+    }
+
+    &__container {
+      width: max-content;
+      margin: 0 auto;
+
+      &__logo{
+        display: block;
+        height: 24.4px;
+        width:20.8px;
+        margin: 3px auto;
+      }
+
+      &__title{
+        font-size: 27px;
+        color:#637488;
+        letter-spacing: 4px;
+      }
+    }
+
+    &__cart{
+      margin-left: 87.5%;
+      margin-top: -25px;
+
+      &__counter{
+        margin-left: 55px;
+        color: #637488;
+        font-size: 22px;
+        font-weight: 500;
+        letter-spacing: 0px;
+      }
+    }
+
+
+    &__cart-icon{
+      height: 17.7px;
+      width: 21px;
+    }
+
+    &__top-menu{
+      margin-left: 66%;
+      margin-top: -40px;
+
+      &__input{
+        background-color: hsl(0, 0%, 98%);
+        border-radius: 3px;
+        border: solid 1px hsl(0, 0%, 82%);
+        height: 35px;
+        padding: 0;
+        width: 232px;
+        font-size: 20px;
+        padding-left: 12px;
+        position: absolute;
+        opacity: 0.8;
+
+        &__btn{
+          width: 35px;
+          background: transparent;
+          border: none;
+          padding-right: -47px;
+          position: relative;
+          align-content: ri;
+          margin-left: 205px;
+          margin-top: 8px;
+        }
+
+        &__icon{
+        fill: hsl(212, 16%, 46%);
+        }
+      }
+
+    }
+  }
+
+
+  .site-nav {
+    margin: 70px 0 0;
+    padding: 0;
+    position: relative;
+    text-align: center;
+
+    &__links {
+      color: #637488;
+      font-size: 22px;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+      padding: 3px 10px;
+      padding: 3px 40px;
+      text-decoration: none;
+
+    }
+
+    &__links:first-child {
+      color: hsl(353, 61%, 56%);
+      font-weight: 501;
+      text-decoration: underline;
+    }
+  }
+
+}
+
+
+.links--top{
+  margin-left: 20px;
+  color: #637488;
+  font-size: 19px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 0px;
 }
