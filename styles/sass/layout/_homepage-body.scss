@@ -86,7 +86,7 @@ body{
 
 .archeologist{
   position: relative;
-  height: 280px;
+  height: 240px;
 }
 
 .archeologist__background{
@@ -136,18 +136,50 @@ body{
 //featured-collections
 
 .featured-toys {
-  height: 350px;
+  height: 340px;
+  background: rgb(240, 240, 240);
+  opacity: 1;
+  margin-top: -13px;
+}
+
+.collection__title {
+  font-size: 19px;
+  color: #637488;
+  margin-bottom: 10px;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 22px;
+  font-weight: 500;
 }
 
 .something__ul{
   display: flex;
+  height: 332px;
+  margin: 0;
   padding-left: 0;
+}
+
+.something__ul-li {
+  text-align: left;
+  display: flex !important;
+  flex-direction: column;
+  height: 293px;
+}
+
+.product-image{
+  // width: 50%;
+  // height: auto;
+  width: auto;
+  height: 55%;
+  margin: 0 auto;
+
 }
 
 .collection-slider{
 
   .slick-track{
     display: flex;
+    height: 330px;
   }
   .product-card{
     width: 100%;
@@ -155,24 +187,54 @@ body{
   .slick-prev{
     left: 0;
     z-index: 99;
-    height: 40px;
+    height: auto;
+    width: 30px;
+    position: absolute;
+    margin-top: 80px;
   }
   .slick-next{
     right: 0;
     z-index: 99;
-    height: 40px;
+    height: auto;
+    width: 30px;
+    position: absolute;
+    margin-top: 80px;
+    margin-right: 15px;
   }
   overflow: hidden;
 }
 
+.prev-arrow {
+  margin-top: 80px;
+  position: absolute;
+  left: 0;
+  padding-left: 10px;
+}
+
+.next-arrow {
+  margin-top: 80px;
+  position: absolute;
+  right: 0;
+  padding-right: 10px;
+}
+
+
 .product-title{
-  font-size: 10px;
+  font-size: 19px;
   color: #637488;
+  margin-top: 0;
+  margin-left: 7px;
 }
 
 .product-price{
-  font-size:15px;
+  font-size: 22px;
+  font-weight: 500;
   color: #99437E;
+  margin: 0 0 3px 7px;
+}
+
+.shop-now {
+  // bottom: 0;
 }
 
 .product-button{
@@ -183,8 +245,9 @@ body{
   font-size: 17px;
   font-weight: 500;
   height: 40px;
-  margin-left: 7px;
-  width: 306px;
+  margin: 0 7px 7px;
+  // width: 306px;
+  width: 95%;
 }
 
 //Theme.liquid
@@ -196,7 +259,7 @@ body{
   margin: 0;
   padding: 0;
   width: 100%;
-  //height: 350px;
+  height: 332px;
 
   &:focus {
     outline: none;

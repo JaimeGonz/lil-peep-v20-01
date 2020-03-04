@@ -7563,12 +7563,10 @@ $(theme.init);
 
 $(document).ready(function () {
   $('.collection-slider').each(function () {
-    $(this).slick({ slidesToShow: 1 });
-    console.log('algo:)');
-  });
-
-  $('.slick-carousel').slick({
-    prevArrow: "<img class='a-left control-c prev slick-prev hola' src='assets/previous.svg'>",
-    nextArrow: "<img class='a-right control-c next slick-next' src='assets/next.svg'>"
+    $(this).slick({
+      slidesToShow: 1,
+      nextArrow: '<i class="next-arrow fas fa-chevron-right"></i>',
+      prevArrow: '<i class="prev-arrow fas fa-chevron-left"></i>'
+    });
   });
 });
