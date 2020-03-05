@@ -3,6 +3,7 @@ body{
 }
 
 .discount{
+  background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-beach-toys-in-the-sand-256927513.jpg?v=1582657088");
   height: 150px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -474,4 +475,42 @@ body{
   height: 20px;
   transform: translate(-46px,5px);
   margin-right: -23px;
+}
+
+
+@media (min-width: 600px) {
+
+
+  .discount{
+    background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-beach-toys-in-the-sand-256927513_bfeaa15a-e289-4c90-bf9b-4f4c02734508.jpg?v=1583387696");
+    margin-top: -435px;
+    height: 400px;
+    margin-left: 66.5%;
+    margin-bottom: 58px;
+    background-size: 569px;
+    width: 30.5%;
+
+    &__background{
+      border-radius: 3px;
+      height: 100%;
+      width: 100%;
+    }
+
+    &__title{
+      font-size: 38px;
+      letter-spacing: 0px;
+      padding-top: 100px;
+      height: 50px;
+      line-height: 56px;
+    }
+
+    &__text{
+      font-size: 86px;
+      line-height: 82px;
+    }
+  }
+
+
+
+
 }
