@@ -240,10 +240,6 @@ body{
   margin: 0 0 3px 7px;
 }
 
-.shop-now {
-  // bottom: 0;
-}
-
 .product-button{
   background-color: #4a90e2;
   border: none;
@@ -486,7 +482,7 @@ body{
     margin-top: -435px;
     height: 400px;
     margin-left: 66.5%;
-    margin-bottom: 58px;
+    margin-bottom: 20px;
     background-size: 569px;
     width: 30.5%;
 
@@ -510,7 +506,107 @@ body{
     }
   }
 
+  .sailors-and-pirates{
+    width: 672px;
+    height: 285px;
+    background-color: hsla(212, 16%, 45%, 0.1);
+    display: inline-block;
+    //margin-bottom: 260px;
+    margin-left: 2.5%;
+
+    &__background{
+      background-size: 412px;
+      height: 284px;
+      width: 100%;
+      background-position: right top;
+    }
+
+    &__content{
+      width: 560px;
+      height: 285px;
+      border-radius: 3px;
+      // border: solid 2px hsl(212, 16%, 46%);
+      background-image: linear-gradient(to right, hsl(0, 0%, 93%) 50%, hsla(0, 0%, 93%, 0) 85%);
+      transform: translate(0px, -305px);
+    }
+
+    &__content--title{
+      text-align: left;
+      width: 45.9%;
+      margin-left: 34px;
+      font-size: 29px;
+      padding-top: 52x;
+      padding-top: 50px;
+      padding-bottom: 15.3px;
+      letter-spacing: -1px;
+      margin-top: 21px;
+    }
+
+    &__content--text{
+      width: 51.4%;
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      margin-bottom: 30px
+    }
+
+    &__content--button{
+      width: 50.9%;
+      height: 50px;
+      font-size: 24px;
+      border-radius: 3px;
+      border: solid 2px hsl(212, 16%, 46%);
+      background-color: hsla(212, 16%, 45%, 0.1);
+      transform: translate(-92%, 0);
+    }
 
 
+  }
+
+  .archeologist {
+    width: 672px;
+    height: 285px;
+    margin-right: 2.5%;
+    margin-left: 1%;
+    display: inline-block;
+
+    &__content {
+      height: 285px;
+      transform: translate(0px, -316px);
+      background-image: linear-gradient(to right, hsl(33, 38%, 58%) 32%, hsla(32, 38%, 46%, 0) 78%);
+    }
+
+    &__background {
+      height: 285px;
+      background-position: right top;
+      transform: translate(0, -2px);
+    }
+
+    &__content--button {
+      border-radius: 3px;
+      font-size: 24px;
+      height: 50px;
+      width: 258px;
+      margin-left: 5.3%;
+      margin-top: 30.2px;
+      left: 0;
+      transform: translate(0, 0);
+    }
+
+    &__content--text {
+      font-size: 17px;
+      width: 274px;
+      height: 57px;
+      margin-left: 3%;
+      margin-bottom: 0;
+    }
+
+    &__content--title {
+      text-align: left;
+      font-size: 29px;
+      letter-spacing: -1px;
+      padding-top: 52px;
+      margin-left: 52px;
+    }
+  }
 
 }
