@@ -7569,4 +7569,5 @@ $(document).ready(function () {
       prevArrow: '<i class="prev-arrow fas fa-chevron-left"></i>'
     });
   });
+  console.log("hola");
 });

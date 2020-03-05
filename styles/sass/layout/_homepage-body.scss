@@ -609,4 +609,96 @@ body{
     }
   }
 
+  // .featured-toys{
+  //   background: transparent;
+  //   margin-top: -180px;
+  // }
+
+  // .collection__title{
+  //   text-align: left;
+  //   font-size: 32px;
+  //   margin-bottom: 25px;
+  // }
+
+  // .something__ul{
+  //   height: 471px;
+  // }
+
+  // .something__ul-li {
+  //   outline: 1px solid;
+  //   width: 324px;
+  //   height: 470.5px;
+  //   margin: auto;
+  //   width: 324px;
+  //   height: 470.5px;
+  //  }
+
+
+
+
+
+
+
+   .wooden-toys{
+    margin-top: 40px;
+    margin-left: 2.5%;
+    display: inline-block;
+    height: 320px;
+
+    &__background{
+      width: 325px;
+      height: 320px;
+      background-size: 325px;
+      background-size: 346px;
+      background-repeat: repeat;
+    }
+
+    &__content{
+      height: 171px;
+      transform: translate(0px, -171px);
+    }
+
+    &__content--title{
+      font-size: 50px;
+      width: 191px;
+      transform: translate(0px, -420px);
+    }
+
+   }
+
+   .plush-toys{
+     display: inline-block;
+     width: 673px;
+     height: 320px;
+     transform: translate(0,-146px);
+     margin-left: 20px;
+     margin-right: 20px;
+
+     &__background{
+       height: 320px;
+     }
+
+     &__content--title{
+      font-size: 50px;
+      transform: translate(0px, -275px);
+
+     }
+   }
+
+   .outdoors{
+     display: inline-block;
+     height: 320px;
+     width: 325px;
+     transform: translate(0,-146px);
+
+     &__background{
+      height: 320px;
+     }
+
+     &__content--title{
+      font-size: 50px;
+      transform: translate(0px, -275px);
+     }
+   }
+
 }
