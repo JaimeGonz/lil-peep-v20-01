@@ -39,3 +39,58 @@
   padding-left: 20px;
   width: 280px;
 }
+
+@media (min-width: 600px) {
+
+  .footer {
+    padding-bottom: 137px;
+
+    &__container-social{
+      display: inline-block;
+
+    }
+
+    &__button{
+      width: 93px;
+      margin-right: 25px;
+    }
+
+    &__title{
+      margin-top: 17.3%;
+      font-size: 22px;
+    }
+
+    &__text{
+      font-size: 22px;
+    }
+
+    &__input{
+      font-size: 19px;
+      margin-bottom: 50px;
+    }
+
+    &__desktop__container__logo{
+      margin: 0 10%;
+    }
+
+    &__email{
+      display: inline-block;
+    }
+
+    &__menu{
+      padding-left: 0;
+    }
+
+    &__menu li{
+      display: inline-block;
+      margin: 0 28.5px;
+      font-size: 22px;
+
+    }
+
+    &__menu a{
+      color: #637488;
+    }
+  }
+
+}

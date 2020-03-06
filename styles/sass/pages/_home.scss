@@ -1,0 +1,10 @@
+.background {
+  background-color: #fafafa;
+  position: relative;
+}
+
+@media (min-width: 600px) {
+  .background{
+    height: 1460px;
+  }
+}
