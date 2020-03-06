@@ -347,6 +347,7 @@ body{
   height: 150px;
 }
 .wooden-toys__background{
+  background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/wooden.jpg?v=1582736880");
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
@@ -380,6 +381,7 @@ body{
   height: 150px;
 }
 .plush-toys__background {
+  background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/Plush.jpg?v=1582737942");
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
@@ -413,6 +415,7 @@ body{
   height: 150px;
 }
 .outdoors__background {
+  background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/outdoors.jpg?v=1582737939");
   background-repeat: no-repeat;
   background-size: cover;
   height: 150px;
@@ -507,7 +510,8 @@ body{
   }
 
   .sailors-and-pirates{
-    width: 672px;
+    // width: 672px;
+    width: 46.5%;
     height: 285px;
     background-color: hsla(212, 16%, 45%, 0.1);
     display: inline-block;
@@ -563,7 +567,8 @@ body{
   }
 
   .archeologist {
-    width: 672px;
+    // width: 672px;
+    width: 46.5%;
     height: 285px;
     margin-right: 2.5%;
     margin-left: 1%;
@@ -609,10 +614,11 @@ body{
     }
   }
 
-  // .featured-toys{
-  //   background: transparent;
-  //   margin-top: -180px;
-  // }
+   .featured-toys{
+    margin: 0 2.5%;
+    background: transparent;
+    margin-top: -180px;
+  }
 
   // .collection__title{
   //   text-align: left;
@@ -629,13 +635,7 @@ body{
   //   width: 324px;
   //   height: 470.5px;
   //   margin: auto;
-  //   width: 324px;
-  //   height: 470.5px;
-  //  }
-
-
-
-
+  // }
 
 
 
@@ -643,14 +643,16 @@ body{
     margin-top: 40px;
     margin-left: 2.5%;
     display: inline-block;
-    height: 320px;
+    // height: 320px;
+    width: 22.6%;
 
     &__background{
-      width: 325px;
+      // width: 325px;
+      width: 100%;
       height: 320px;
-      background-size: 325px;
-      background-size: 346px;
-      background-repeat: repeat;
+      background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/shutterstock_219082657-1024x819.jpg?v=1583510228");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
 
     &__content{
@@ -668,13 +670,15 @@ body{
 
    .plush-toys{
      display: inline-block;
-     width: 673px;
+    //  width: 673px;
+     width: 46.5%;
      height: 320px;
      transform: translate(0,-146px);
      margin-left: 20px;
      margin-right: 20px;
 
      &__background{
+       background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-portrait-of-a-little-girl-with-a-toy-bunny-pilot-in-the-interior-161017601.jpg?v=1583510836");
        height: 320px;
      }
 
@@ -688,10 +692,13 @@ body{
    .outdoors{
      display: inline-block;
      height: 320px;
-     width: 325px;
+    //  width: 325px;
+     width: 22.6%;
      transform: translate(0,-146px);
 
      &__background{
+      background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-two-young-children-on-a-swing-sunny-summer-day-251219917.jpg?v=1583510647");
+      width: 100%;
       height: 320px;
      }
 
@@ -699,6 +706,10 @@ body{
       font-size: 50px;
       transform: translate(0px, -275px);
      }
+   }
+
+   .scroll-up {
+     display: none;
    }
 
 }
