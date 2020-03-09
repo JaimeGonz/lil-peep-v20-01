@@ -4,182 +4,203 @@ body{
 
 .discount{
   background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-beach-toys-in-the-sand-256927513.jpg?v=1582657088");
-  height: 150px;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.discount__background{
-  width: 100%;
   height: 150px;
-  text-align: center;
-  background: rgba(245, 166, 35, 0.7);
-  margin-top: 34px;
+
+  &__background{
+    background: rgba(245, 166, 35, 0.7);
+    height: 150px;
+    margin-top: 34px;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__title{
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+    opacity: 1 !important;
+    padding-top: 25px;
+  }
+
+  &__text{
+    color: #FFF;
+    font-size: 45px;
+    line-height: 35px;
+    margin-top: 0px;
+    opacity:  1 !important;
+  }
 }
 
-.discount__title{
-  color: #FFF;
-  font-size: 20px;
-  opacity: 1 !important;
-  margin-top: 16px;
-  padding-top: 25px;
-  margin-bottom: 0px;
-}
-
-.discount__text{
-  color: #FFF;
-  font-size: 45px;
-  opacity:  1 !important;
-  margin-top: 0px;
-  line-height: 35px;
-}
 
 //Sailors and pirates kit section
-
 .sailors-and-pirates{
-  position: relative;
   height: 250px;
-}
+  position: relative;
 
-.sailors-and-pirates__background{
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 210px;
-  width: 100%;
-}
+  &__background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+    width: 100%;
+  }
 
-.sailors-and-pirates__content{
-  background-image: linear-gradient(to bottom, hsla(0, 0%, 94%, 0) 12%, hsl(0, 0%, 93%) 81%);
-   height: 230px;
-   transform: translate(0px, -210px);
-   width: 100%;
-}
+  &__content{
+    height: 230px;
+    transform: translate(0px, -210px);
+    width: 100%;
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 94%, 0) 12%, hsl(0, 0%, 93%) 81%);
+  }
 
-.sailors-and-pirates__content--title{
-  font-family: 'Roboto Condensed';
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.004em;
-  margin-bottom: 0;
-  padding-top: 80px;
-  text-align: center;
-}
+  &__content--title{
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    padding-top: 80px;
+    text-align: center;
+  }
 
-.sailors-and-pirates__content--text{
-  font-size: 15px;
-  margin: 5px 14px 15px 14px;
-  text-align: center;
-}
+  &__content--text{
+    font-size: 15px;
+    margin: 5px 14px 15px 14px;
+    text-align: center;
+  }
 
-.sailors-and-pirates__content--button{
-  background: none;
-  border: solid 2px hsl(212, 16%, 46%);
-  border-radius: 2px;
-  color:hsl(212, 16%, 46%);
-  font-size: 17px;
-  font-weight: 500;
-  height: 40px;
-  // margin-left: 7px;
-  width: 306px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
+  &__content--button{
+    background: none;
+    border-radius: 2px;
+    border: solid 2px hsl(212, 16%, 46%);
+    color:hsl(212, 16%, 46%);
+    font-size: 17px;
+    font-weight: 500;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 306px;
+  }
 }
 
 //Archeologist section
-
 .archeologist{
-  position: relative;
   height: 240px;
+  position: relative;
+
+  &__background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+    width: 100%;
+  }
+
+  &__content{
+    background-image: linear-gradient(to bottom, hsla(33, 39%, 58%, 0), hsl(33, 38%, 58%) 77%);
+    height:220px;
+    transform: translate(0px, -210px);
+    width: 100%;
+  }
+
+  &__content--title{
+    color: #FFF;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    padding-top: 71px;
+    text-align: center;
+  }
+
+  &__content--text{
+    color: #FFF;
+    font-size: 15px;
+    margin: 5px 14px 15px 14px;
+    text-align: center;
+  }
+
+  &__content--button{
+    background-color: hsla(0, 0%, 100%, 0.2);
+    border-radius: 2px;
+    border: solid 2px #FFF;
+    color:#FFF;
+    font-size: 17px;
+    font-weight: 500;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 306px;
+  }
 }
 
-.archeologist__background{
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 210px;
-  width: 100%;
-}
-
-.archeologist__content{
-  background-image: linear-gradient(to bottom, hsla(33, 39%, 58%, 0), hsl(33, 38%, 58%) 77%);
-  height:220px;
-  transform: translate(0px, -210px);
-  width: 100%;
-}
-
-.archeologist__content--title{
-  font-family: 'Roboto Condensed';
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.004em;
-  margin-bottom: 0;
-  padding-top: 71px;
-  text-align: center;
-  color: #FFF;
-}
-
-.archeologist__content--text{
-  font-size: 15px;
-  margin: 5px 14px 15px 14px;
-  text-align: center;
-  color: #FFF;
-}
-
-.archeologist__content--button{
-  background-color: hsla(0, 0%, 100%, 0.2);
-  border: solid 2px #FFF;
-  border-radius: 2px;
-  color:#FFF;
-  font-size: 17px;
-  font-weight: 500;
-  height: 40px;
-  // margin-left: 7px;
-  width: 306px;
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, 0);
-}
 
 //featured-collections
-
 .featured-toys {
-  height: 340px;
   background: rgb(240, 240, 240);
-  opacity: 1;
+  height: 340px;
   margin-top: -13px;
+  opacity: 1;
+
+  &__title {
+    color: #637488;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 22px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
-.collection__title {
-  font-size: 19px;
-  color: #637488;
-  margin-bottom: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  padding-top: 22px;
-  font-weight: 500;
-}
 
-.something__ul{
+.featured-products{
   display: flex;
   height: 332px;
   margin: 0;
   padding-left: 0;
-}
 
-.something__ul-li {
-  text-align: left;
-  display: flex !important;
-  flex-direction: column;
-  height: 293px;
-}
+  &__item {
+    display: flex !important;
+    flex-direction: column;
+    height: 293px;
+    text-align: left;
+  }
 
-.product-image{
-  // width: 50%;
-  // height: auto;
-  width: auto;
-  height: 55%;
-  margin: 0 auto;
+  &__item--image{
+    height: 55%;
+    margin: 0 auto;
+    width: auto;
+  }
 
+  &__item--title{
+    color: #637488;
+    font-size: 19px;
+    margin-left: 7px;
+    margin-top: 0;
+  }
+
+  &__item--price{
+    color: #99437E;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 3px 7px;
+  }
+
+  &__item--button{
+    background-color: #4a90e2;
+    border-radius: 2px;
+    border: none;
+    color:white;
+    font-size: 17px;
+    font-weight: 500;
+    height: 40px;
+    margin: 0 7px 7px;
+    width: 95%;
+  }
 }
 
 .collection-slider{
@@ -192,78 +213,48 @@ body{
     width: 100%;
   }
   .slick-prev{
-    left: 0;
-    z-index: 99;
     height: auto;
-    width: 30px;
-    position: absolute;
+    left: 0;
     margin-top: 80px;
+    position: absolute;
+    width: 30px;
+    z-index: 99;
   }
   .slick-next{
-    right: 0;
-    z-index: 99;
     height: auto;
-    width: 30px;
-    position: absolute;
-    margin-top: 80px;
     margin-right: 15px;
+    margin-top: 80px;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    z-index: 99;
   }
   overflow: hidden;
-
 }
 
 .prev-arrow {
-  margin-top: 80px;
-  position: absolute;
   left: 0;
+  margin-top: 80px;
   padding-left: 10px;
+  position: absolute;
 }
 
 .next-arrow {
   margin-top: 80px;
+  padding-right: 10px;
   position: absolute;
   right: 0;
-  padding-right: 10px;
-}
-
-
-.product-title{
-  font-size: 19px;
-  color: #637488;
-  margin-top: 0;
-  margin-left: 7px;
-}
-
-.product-price{
-  font-size: 22px;
-  font-weight: 500;
-  color: #99437E;
-  margin: 0 0 3px 7px;
-}
-
-.product-button{
-  background-color: #4a90e2;
-  border: none;
-  border-radius: 2px;
-  color:white;
-  font-size: 17px;
-  font-weight: 500;
-  height: 40px;
-  margin: 0 7px 7px;
-  // width: 306px;
-  width: 95%;
 }
 
 //Theme.liquid
-
 .slick-list {
-  position: relative;
-  overflow: hidden;
   display: block;
-  margin: 0;
-  padding: 0;
-  width: 100%;
   height: 332px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
 
   &:focus {
     outline: none;
@@ -277,18 +268,18 @@ body{
 
 .slick-slider .slick-track,
 .slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
   -moz-transform: translate3d(0, 0, 0);
   -ms-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
 }
 
 .slick-track {
-  position: relative;
-  left: 0;
-  top: 0;
   display: block;
+  left: 0;
+  position: relative;
+  top: 0;
 
   &:before,
   &:after {
@@ -307,8 +298,8 @@ body{
 .slick-slide {
   float: left;
   height: 100%;
-  width: 320px;
   min-height: 1px;
+  width: 320px;
   [dir="rtl"] & {
     float: right;
   }
@@ -346,136 +337,140 @@ body{
 //Wooden toys
 .wooden-toys {
   height: 150px;
-}
-.wooden-toys__background{
-  background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/wooden.jpg?v=1582736880");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 150px;
-  width: 100%;
-}
 
-.wooden-toys__content {
-  height: 69px;
-  background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 0%));
-  mix-blend-mode: multiply;
-  opacity: 0.7;
-  transform: translate(0px, -69px);
-}
+  &__background{
+    background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/wooden.jpg?v=1582736880");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+  }
 
-.wooden-toys__content--title{
-  font-family: 'Roboto Condensed';
-  font-size: 30px;
-  font-weight: 500;
-  letter-spacing: 0.004em;
-  margin-bottom: 0;
-  padding-top: 71px;
-  text-align: center;
-  color: #FFF;
-  text-align: left;
-  margin-left: 10px;
-  transform: translate(0px, -212px);
+  &__content {
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 0%));
+    height: 69px;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    transform: translate(0px, -69px);
+  }
+
+  &__content--title{
+    color: #FFF;
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding-top: 71px;
+    text-align: center;
+    text-align: left;
+    transform: translate(0px, -212px);
+  }
 }
 
 //Plush toys
 .plush-toys {
   height: 150px;
-}
-.plush-toys__background {
-  background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/Plush.jpg?v=1582737942");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 150px;
-  width: 100%;
-}
 
-.plush-toys__content {
-  height: 85px;
-  background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 0%));
-  mix-blend-mode: multiply;
-  opacity: 0.7;
-  transform: translate(0px, -85px);
-}
+  &__background {
+    background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/Plush.jpg?v=1582737942");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+  }
 
-.plush-toys__content--title{
-  font-family: 'Roboto Condensed';
-  font-size: 30px;
-  font-weight: 500;
-  letter-spacing: 0.004em;
-  margin-bottom: 0;
-  padding-top: 71px;
-  text-align: center;
-  color: #FFF;
-  transform: translate(0px, -230px);
-  text-align: left;
-  margin-left: 10px;
+  &__content {
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 0%));
+    height: 85px;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    transform: translate(0px, -85px);
+  }
+
+  &__content--title{
+    color: #FFF;
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding-top: 71px;
+    text-align: center;
+    text-align: left;
+    transform: translate(0px, -230px);
+  }
 }
 
 //Outdoors
 .outdoors {
   height: 150px;
-}
-.outdoors__background {
-  background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/outdoors.jpg?v=1582737939");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 150px;
-  width: 100%;
-}
 
-.outdoors__content {
-  background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 0%));
-  height: 85px;
-  mix-blend-mode: multiply;
-  opacity: 0.7;
-  transform: translate(0px, -85px);
-}
+  &__background {
+    background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/outdoors.jpg?v=1582737939");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+  }
 
-.outdoors__content--title{
-  color: #FFF;
-  font-family: 'Roboto Condensed';
-  font-size: 30px;
-  font-weight: 500;
-  letter-spacing: 0.004em;
-  margin-bottom: 0;
-  margin-left: 10px;
-  padding-top: 71px;
-  text-align: center;
-  text-align: left;
-  transform: translate(0px, -230px);
+  &__content {
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 0%));
+    height: 85px;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    transform: translate(0px, -85px);
+  }
+
+  &__content--title{
+    color: #FFF;
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding-top: 71px;
+    text-align: center;
+    text-align: left;
+    transform: translate(0px, -230px);
+  }
 }
 
 //scroll up button
 .scroll-up {
-  margin-top: 20px;
-  text-align: center;
   background-color: hsl(0,0%,98%);
   margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+
+  &__link{
+    text-decoration: none;
+    width: 150px;
+  }
+
+  &__button {
+    background-color: hsl(212, 72%, 59%);
+    border-radius: 2px;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    height: 40px;
+    padding-left: 28px;
+    text-align: left;
+    width: 150px;
+  }
+
+  &__icon {
+    fill: #FFF;
+    height: 20px;
+    margin-right: -23px;
+    transform: translate(-46px,5px);
+  }
 }
 
-.scroll-up__link{
-  text-decoration: none;
-  width: 150px;
-}
-
-.scroll-up__button {
-  background-color: hsl(212, 72%, 59%);
-  border-radius: 2px;
-  border: none;
-  color: #FFF;
-  font-size: 16px;
-  height: 40px;
-  width: 150px;
-  padding-left: 28px;
-  text-align: left;
-}
-
-.scroll-up__icon {
-  fill: #FFF;
-  height: 20px;
-  transform: translate(-46px,5px);
-  margin-right: -23px;
-}
 
 
 @media (min-width: 600px) {
@@ -483,11 +478,11 @@ body{
 
   .discount{
     background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-beach-toys-in-the-sand-256927513_bfeaa15a-e289-4c90-bf9b-4f4c02734508.jpg?v=1583387696");
-    margin-top: -435px;
-    height: 400px;
-    margin-left: 66.5%;
-    margin-bottom: 20px;
     background-size: 569px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-left: 66.5%;
+    margin-top: -435px;
     width: 30.5%;
 
     &__background{
@@ -498,10 +493,10 @@ body{
 
     &__title{
       font-size: 38px;
-      letter-spacing: 0px;
-      padding-top: 100px;
       height: 50px;
+      letter-spacing: 0px;
       line-height: 56px;
+      padding-top: 100px;
     }
 
     &__text{
@@ -511,79 +506,73 @@ body{
   }
 
   .sailors-and-pirates{
-    // width: 672px;
-    width: 46.5%;
-    height: 285px;
     background-color: hsla(212, 16%, 45%, 0.1);
     display: inline-block;
-    //margin-bottom: 260px;
+    height: 285px;
     margin-left: 2.5%;
+    width: 46.5%;
 
     &__background{
+      background-position: right top;
       background-size: 412px;
       height: 284px;
       width: 100%;
-      background-position: right top;
     }
 
     &__content{
-      width: 560px;
-      height: 285px;
-      border-radius: 3px;
-      // border: solid 2px hsl(212, 16%, 46%);
       background-image: linear-gradient(to right, hsl(0, 0%, 93%) 50%, hsla(0, 0%, 93%, 0) 85%);
+      border-radius: 3px;
+      height: 285px;
       transform: translate(0px, -305px);
+      width: 560px;
     }
 
     &__content--title{
+      font-size: 29px;
+      letter-spacing: -1px;
+      margin-left: 34px;
+      margin-top: 21px;
+      padding-bottom: 15.3px;
+      padding-top: 50px;
+      padding-top: 52x;
       text-align: left;
       width: 45.9%;
-      margin-left: 34px;
-      font-size: 29px;
-      padding-top: 52x;
-      padding-top: 50px;
-      padding-bottom: 15.3px;
-      letter-spacing: -1px;
-      margin-top: 21px;
     }
 
     &__content--text{
-      width: 51.4%;
       font-size: 16px;
       letter-spacing: 0.5px;
-      margin-bottom: 30px
+      margin-bottom: 30px;
+      width: 51.4%;
     }
 
     &__content--button{
-      width: 50.9%;
-      height: 50px;
-      font-size: 24px;
+      background-color: hsla(212, 16%, 45%, 0.1);
       border-radius: 3px;
       border: solid 2px hsl(212, 16%, 46%);
-      background-color: hsla(212, 16%, 45%, 0.1);
+      font-size: 24px;
+      height: 50px;
       transform: translate(-92%, 0);
+      width: 50.9%;
     }
-
-
   }
 
   .archeologist {
-    // width: 672px;
-    width: 46.5%;
-    height: 285px;
-    margin-right: 2.5%;
-    margin-left: 1%;
     display: inline-block;
+    height: 285px;
+    margin-left: 1.3%;
+    margin-right: 2.5%;
+    width: 46.5%;
 
     &__content {
+      background-image: linear-gradient(to right, hsl(33, 38%, 58%) 32%, hsla(32, 38%, 46%, 0) 78%);
       height: 285px;
       transform: translate(0px, -316px);
-      background-image: linear-gradient(to right, hsl(33, 38%, 58%) 32%, hsla(32, 38%, 46%, 0) 78%);
     }
 
     &__background {
-      height: 285px;
       background-position: right top;
+      height: 285px;
       transform: translate(0, -2px);
     }
 
@@ -591,116 +580,107 @@ body{
       border-radius: 3px;
       font-size: 24px;
       height: 50px;
-      width: 258px;
+      left: 0;
       margin-left: 5.3%;
       margin-top: 30.2px;
-      left: 0;
       transform: translate(0, 0);
+      width: 258px;
     }
 
     &__content--text {
       font-size: 17px;
-      width: 274px;
       height: 57px;
-      margin-left: 3%;
       margin-bottom: 0;
+      margin-left: 3%;
+      width: 274px;
     }
 
     &__content--title {
-      text-align: left;
       font-size: 29px;
       letter-spacing: -1px;
-      padding-top: 52px;
       margin-left: 52px;
+      padding-top: 52px;
+      text-align: left;
     }
   }
 
-   .featured-toys{
-    margin: 0 2.5%;
+  .featured-toys{
     background: transparent;
-    margin-top: -180px;
     height: 541px;
-    margin-bottom: 19px;
+    margin: -180px 2.5% 19px 2.5%;
+
+    &__title{
+      font-size: 32px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
   }
 
-  .collection__title{
-    text-align: left;
-    font-size: 32px;
-    margin-bottom: 25px;
-  }
-
-  .something__ul{
+  .featured-products{
     height: 500px;
+
+    &__item {
+      background:#f0f0f0;
+      height: 471.5px;
+      margin: auto;
+      opacity: 1;
+      width: 24%;
+    }
+
+    &__item:nth-child(1) {
+      margin-left: 0;
+    }
+
+    &__item:nth-child(4) {
+      margin-right: 0;
+    }
+
+    &__item:nth-child(2) > img:nth-child(1) {
+      width: 72%;
+      height: 37%;
+    }
+
+    &__item--image{
+      margin: auto;
+    }
+
+    &__item--title{
+      font-size: 24px;
+      margin-left: 13px;
+      margin-top: auto;
+    }
+
+    &__item--price{
+      font-size: 30px;
+      margin: 0 0 3px 13px;
+    }
+
+    &__item--button{
+      font-size: 27px;
+      height: 50px;
+      margin: 0 13px 21.5px 19px;
+      text-align: center;
+      width: 91.3%;
+    }
+
+    &__item--button:hover{
+      background: #f47f0d;
+    }
   }
 
-  .something__ul-li {
-    background:#f0f0f0;
-    opacity: 1;
-    // width: 324px;
-    width: 24%;
-    height: 471.5px;
-    margin: auto;
-  }
-
-  .something__ul-li:nth-child(1) {
-    margin-left: 0;
-  }
-
-  .something__ul-li:nth-child(4) {
-    margin-right: 0;
-  }
-
-  .something__ul-li:nth-child(2) > img:nth-child(1) {
-    width: 72%;
-    height: 37%;
-  }
-
-
-  .product-button{
-    // width: 295.8px;
-    width: 91.3%;
-    height: 50px;
-    text-align: center;
-    margin-bottom: 21.5px;
-    margin: 0 13px 19px;
-    font-size: 27px;
-  }
-
-  .product-button:hover{
-    background: #f47f0d;
-  }
-
-  .product-title{
-    margin-top: auto;
-    font-size: 24px;
-    margin-left: 13px;
-  }
-
-  .product-price{
-    margin: 0 0 3px 13px;
-    font-size: 30px;
-  }
-
-  .product-image{
-    margin: auto;
-  }
-
-
-
-   .wooden-toys{
-    margin-top: 40px;
-    margin-left: 2.5%;
+//wooden-toys
+  .wooden-toys{
     display: inline-block;
-    // height: 320px;
+    margin-left: 2.5%;
+    margin-top: 40px;
     width: 22.6%;
 
     &__background{
-      // width: 325px;
-      width: 100%;
-      height: 320px;
       background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/shutterstock_219082657-1024x819.jpg?v=1583510228");
-      background-size: cover;
       background-repeat: no-repeat;
+      background-size: cover;
+      height: 320px;
+      width: 100%;
     }
 
     &__content{
@@ -710,15 +690,13 @@ body{
 
     &__content--title{
       font-size: 50px;
-      width: 191px;
       transform: translate(0px, -420px);
+      width: 191px;
     }
-
    }
 
    .plush-toys{
      display: inline-block;
-    //  width: 673px;
      width: 46.5%;
      height: 320px;
      transform: translate(0,-146px);
@@ -740,14 +718,13 @@ body{
    .outdoors{
      display: inline-block;
      height: 320px;
-    //  width: 325px;
-     width: 22.6%;
      transform: translate(0,-146px);
+     width: 22.6%;
 
      &__background{
       background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-two-young-children-on-a-swing-sunny-summer-day-251219917.jpg?v=1583510647");
-      width: 100%;
       height: 320px;
+      width: 100%;
      }
 
      &__content--title{
@@ -759,5 +736,4 @@ body{
    .scroll-up {
      display: none;
    }
-
 }
