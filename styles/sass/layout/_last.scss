@@ -5,6 +5,14 @@
   border: solid 1px hsl(0,0%,92%);
   color: hsl(212,16%,46%);
   text-align: center;
+
+  &__menu{
+    display: none;
+  }
+
+  &__desktop__container__logo{
+    display: none;
+  }
 }
 
 .footer a {
@@ -40,6 +48,8 @@
   width: 280px;
 }
 
+
+
 @media (min-width: 600px) {
 
   .footer {
@@ -70,7 +80,15 @@
     }
 
     &__desktop__container__logo{
-      margin: 0 10%;
+      display: inline;
+      margin: 0 7.1%;
+    }
+
+    &__desktop__container__logo > img:nth-child(1) {
+      // height: 50px;
+      // width: 50px;
+      height: 80px;
+      width: auto;
     }
 
     &__email{

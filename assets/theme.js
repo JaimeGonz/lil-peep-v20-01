@@ -7562,12 +7562,13 @@ function onYouTubeIframeAPIReady() {
 $(theme.init);
 
 $(document).ready(function () {
-  $('.collection-slider').each(function () {
-    $(this).slick({
-      slidesToShow: 1,
-      nextArrow: '<i class="next-arrow fas fa-chevron-right"></i>',
-      prevArrow: '<i class="prev-arrow fas fa-chevron-left"></i>'
+  if ($(window).width() < 600) {
+    $('.collection-slider').each(function () {
+      $(this).slick({
+        slidesToShow: 1,
+        nextArrow: '<i class="next-arrow fas fa-chevron-right"></i>',
+        prevArrow: '<i class="prev-arrow fas fa-chevron-left"></i>'
+      });
     });
-  });
-  console.log("hola");
+  }
 });
