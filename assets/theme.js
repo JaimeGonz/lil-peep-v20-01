@@ -4106,7 +4106,7 @@ theme.FormStatus = (function () {
 //   }
 
 //   return hero;
-}) ();
+//}) ();
 
 // prettier-ignore
 window.theme = window.theme || {};
@@ -7560,3 +7560,15 @@ function onYouTubeIframeAPIReady() {
 }
 
 $(theme.init);
+
+$(document).ready(function () {
+  if ($(window).width() < 600) {
+    $('.collection-slider').each(function () {
+      $(this).slick({
+        slidesToShow: 1,
+        nextArrow: '<i class="next-arrow fas fa-chevron-right"></i>',
+        prevArrow: '<i class="prev-arrow fas fa-chevron-left"></i>'
+      });
+    });
+  }
+});

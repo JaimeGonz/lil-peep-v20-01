@@ -1,49 +1,102 @@
 .treasure-island{
-  position: relative;
   height: 280px;
+  position: relative;
+
+  &__background{
+    background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/shutterstock_257709388_3d3205ca-acae-41b7-84a4-765ed2c9d891.jpg?v=1582570596");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 256px !important;
+    transform: translate(0px,-55px);
+    width: 100% !important;
+  }
+
+  &__content{
+    background-image: linear-gradient(178deg, hsla(30, 75%, 94%, 0) 3%,
+     hsl(30, 75%, 94%) 55%);
+     height: 248px;
+     transform: translate(0px, -210px);
+     width: 100%;
+  }
+
+  &__content--title{
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    padding-top: 96px;
+    text-align: center;
+  }
+
+  &__content--text{
+    font-size: 16px;
+    margin: 5px 14px 15px 14px;
+    text-align: center;
+  }
+
+  &__content--button{
+    background-color: #4a90e2;
+    border-radius: 2px;
+    border: none;
+    color:white;
+    font-size: 17px;
+    font-weight: 500;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 306px;
+  }
 }
 
-.treasure-island__background{
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 256px !important;
-  transform: translate(0px,-55px);
-  width: 100% !important;
+
+
+@media (min-width: 600px) {
+
+  .treasure-island {
+    height: 400px;
+    margin-bottom: 0;
+    margin-left: 2.5%;
+    width: 62.5%;
+
+    &__background{
+      background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/shutterstock_187114202.jpg?v=1583385244") !important;
+      border-radius: 3px;
+      height: 400px !important;
+      transform: translate(0px,0px);
+      width: 635px !important;
+    }
+
+    &__content{
+      background-image: linear-gradient(71deg, hsla(31, 60%, 93%, 0) 30%, hsl(30, 75%, 94%) 60%);
+      border-radius: 3px;
+      height: 400px;
+      transform: translate(0px, -420px);
+      width: 100%;
+    }
+
+    &__content--title{
+      font-size: 32px;
+      margin-right: 109px;
+      margin-top: 20px;
+      text-align: right;
+    }
+
+    &__content--text{
+      font-size: 21px;
+      letter-spacing: 0.5px;
+      margin-left: 53%;
+      text-align: center;
+      width: 46%;
+    }
+
+    &__content--button{
+      border-radius: 3px;
+      font-size: 30px;
+      height: 77px;
+      transform: translate(19%,0);
+      width: 320px;
+    }
+  }
 }
-
-.treasure-island__content{
-  background-image: linear-gradient(178deg, hsla(30, 75%, 94%, 0) 3%,
-   hsl(30, 75%, 94%) 55%);
-   height: 248px;
-   transform: translate(0px, -210px);
-   width: 100%;
-}
-
-.treasure-island__content--title{
-  font-family: 'Roboto Condensed';
-  font-size: 20px;
-  font-weight: 500;
-  letter-spacing: 0.004em;
-  margin-bottom: 0;
-  padding-top: 96px;
-  text-align: center;
-}
-
-.treasure-island__content--text{
-  font-size: 16px;
-  margin: 5px 14px 15px 14px;
-  text-align: center;
-}
-
-.treasure-island__content--button{
-  background-color: #4a90e2;
-  border: none;
-  color:white;
-  font-size: 17px;
-  font-weight: 500;
-  height: 40px;
-  margin-left: 7px;
-  width: 306px;
-}
-
-

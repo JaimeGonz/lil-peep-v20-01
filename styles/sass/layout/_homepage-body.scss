@@ -1,30 +1,739 @@
+body{
+  background-color: hsl(0, 0%, 98%);
+}
+
 .discount{
-  height: 150px;
+  background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-beach-toys-in-the-sand-256927513.jpg?v=1582657088");
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.discount__background{
-  width: 100%;
   height: 150px;
+
+  &__background{
+    background: rgba(245, 166, 35, 0.7);
+    height: 150px;
+    margin-top: 34px;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__title{
+    color: #FFF;
+    font-size: 20px;
+    margin-bottom: 0px;
+    margin-top: 16px;
+    opacity: 1 !important;
+    padding-top: 25px;
+  }
+
+  &__text{
+    color: #FFF;
+    font-size: 45px;
+    line-height: 35px;
+    margin-top: 0px;
+    opacity:  1 !important;
+  }
+}
+
+
+//Sailors and pirates kit section
+.sailors-and-pirates{
+  height: 250px;
+  position: relative;
+
+  &__background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+    width: 100%;
+  }
+
+  &__content{
+    height: 230px;
+    transform: translate(0px, -210px);
+    width: 100%;
+    background-image: linear-gradient(to bottom, hsla(0, 0%, 94%, 0) 12%, hsl(0, 0%, 93%) 81%);
+  }
+
+  &__content--title{
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    padding-top: 80px;
+    text-align: center;
+  }
+
+  &__content--text{
+    font-size: 15px;
+    margin: 5px 14px 15px 14px;
+    text-align: center;
+  }
+
+  &__content--button{
+    background: none;
+    border-radius: 2px;
+    border: solid 2px hsl(212, 16%, 46%);
+    color:hsl(212, 16%, 46%);
+    font-size: 17px;
+    font-weight: 500;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 306px;
+  }
+}
+
+//Archeologist section
+.archeologist{
+  height: 240px;
+  position: relative;
+
+  &__background{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 210px;
+    width: 100%;
+  }
+
+  &__content{
+    background-image: linear-gradient(to bottom, hsla(33, 39%, 58%, 0), hsl(33, 38%, 58%) 77%);
+    height:220px;
+    transform: translate(0px, -210px);
+    width: 100%;
+  }
+
+  &__content--title{
+    color: #FFF;
+    font-family: 'Roboto Condensed';
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    padding-top: 71px;
+    text-align: center;
+  }
+
+  &__content--text{
+    color: #FFF;
+    font-size: 15px;
+    margin: 5px 14px 15px 14px;
+    text-align: center;
+  }
+
+  &__content--button{
+    background-color: hsla(0, 0%, 100%, 0.2);
+    border-radius: 2px;
+    border: solid 2px #FFF;
+    color:#FFF;
+    font-size: 17px;
+    font-weight: 500;
+    height: 40px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 0);
+    width: 306px;
+  }
+}
+
+
+//featured-collections
+.featured-toys {
+  background: rgb(240, 240, 240);
+  height: 340px;
+  margin-top: -13px;
+  opacity: 1;
+
+  &__title {
+    color: #637488;
+    font-size: 19px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    padding-top: 22px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+}
+
+
+.featured-products{
+  display: flex;
+  height: 332px;
+  margin: 0;
+  padding-left: 0;
+
+  &__item {
+    display: flex !important;
+    flex-direction: column;
+    height: 293px;
+    text-align: left;
+  }
+
+  &__item--image{
+    height: 55%;
+    margin: 0 auto;
+    width: auto;
+  }
+
+  &__item--title{
+    color: #637488;
+    font-size: 19px;
+    margin-left: 7px;
+    margin-top: 0;
+  }
+
+  &__item--price{
+    color: #99437E;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 0 0 3px 7px;
+  }
+
+  &__item--button{
+    background-color: #4a90e2;
+    border-radius: 2px;
+    border: none;
+    color:white;
+    font-size: 17px;
+    font-weight: 500;
+    height: 40px;
+    margin: 0 7px 7px;
+    width: 95%;
+  }
+}
+
+.collection-slider{
+
+  .slick-track{
+    display: flex;
+    height: 330px;
+  }
+  .product-card{
+    width: 100%;
+  }
+  .slick-prev{
+    height: auto;
+    left: 0;
+    margin-top: 80px;
+    position: absolute;
+    width: 30px;
+    z-index: 99;
+  }
+  .slick-next{
+    height: auto;
+    margin-right: 15px;
+    margin-top: 80px;
+    position: absolute;
+    right: 0;
+    width: 30px;
+    z-index: 99;
+  }
+  overflow: hidden;
+}
+
+.prev-arrow {
+  left: 0;
+  margin-top: 80px;
+  padding-left: 10px;
+  position: absolute;
+}
+
+.next-arrow {
+  margin-top: 80px;
+  padding-right: 10px;
+  position: absolute;
+  right: 0;
+}
+
+//Theme.liquid
+.slick-list {
+  display: block;
+  height: 332px;
+  margin: 0;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+  width: 100%;
+
+  &:focus {
+    outline: none;
+  }
+
+  &.dragging {
+    cursor: pointer;
+    cursor: hand;
+  }
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  display: block;
+  left: 0;
+  position: relative;
+  top: 0;
+
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+}
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  width: 320px;
+  [dir="rtl"] & {
+    float: right;
+  }
+  img {
+    display: block;
+  }
+  &.slick-loading img {
+    display: none;
+  }
+
+  display: none;
+
+  &.dragging img {
+    pointer-events: none;
+  }
+
+  .slick-initialized & {
+    display: block;
+  }
+
+  .slick-loading & {
+    visibility: hidden;
+  }
+
+  .slick-vertical & {
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+  }
+}
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+//Wooden toys
+.wooden-toys {
+  height: 150px;
+
+  &__background{
+    background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/wooden.jpg?v=1582736880");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+  }
+
+  &__content {
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 0%));
+    height: 69px;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    transform: translate(0px, -69px);
+  }
+
+  &__content--title{
+    color: #FFF;
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding-top: 71px;
+    text-align: center;
+    text-align: left;
+    transform: translate(0px, -212px);
+  }
+}
+
+//Plush toys
+.plush-toys {
+  height: 150px;
+
+  &__background {
+    background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/Plush.jpg?v=1582737942");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+  }
+
+  &__content {
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 0%));
+    height: 85px;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    transform: translate(0px, -85px);
+  }
+
+  &__content--title{
+    color: #FFF;
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding-top: 71px;
+    text-align: center;
+    text-align: left;
+    transform: translate(0px, -230px);
+  }
+}
+
+//Outdoors
+.outdoors {
+  height: 150px;
+
+  &__background {
+    background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/outdoors.jpg?v=1582737939");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+  }
+
+  &__content {
+    background-image: linear-gradient(to bottom, hsl(0, 0%, 100%), hsl(0, 0%, 0%));
+    height: 85px;
+    mix-blend-mode: multiply;
+    opacity: 0.7;
+    transform: translate(0px, -85px);
+  }
+
+  &__content--title{
+    color: #FFF;
+    font-family: 'Roboto Condensed';
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 0.004em;
+    margin-bottom: 0;
+    margin-left: 10px;
+    padding-top: 71px;
+    text-align: center;
+    text-align: left;
+    transform: translate(0px, -230px);
+  }
+}
+
+//scroll up button
+.scroll-up {
+  background-color: hsl(0,0%,98%);
+  margin-bottom: 20px;
+  margin-top: 20px;
   text-align: center;
-  background: rgba(245, 166, 35, 0.7);
-  margin-top: 34px;
+
+  &__link{
+    text-decoration: none;
+    width: 150px;
+  }
+
+  &__button {
+    background-color: hsl(212, 72%, 59%);
+    border-radius: 2px;
+    border: none;
+    color: #FFF;
+    font-size: 16px;
+    height: 40px;
+    padding-left: 28px;
+    text-align: left;
+    width: 150px;
+  }
+
+  &__icon {
+    fill: #FFF;
+    height: 20px;
+    margin-right: -23px;
+    transform: translate(-46px,5px);
+  }
 }
 
-.discount__title{
-  color: #FFF;
-  font-size: 20px;
-  opacity: 1 !important;
-  margin-top: 16px;
-  padding-top: 25px;
-  margin-bottom: 0px;
-}
 
-.discount__text{
-  color: #FFF;
-  font-size: 45px;
-  opacity:  1 !important;
-  margin-top: 0px;
-  line-height: 35px;
+
+@media (min-width: 600px) {
+
+
+  .discount{
+    background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-beach-toys-in-the-sand-256927513_bfeaa15a-e289-4c90-bf9b-4f4c02734508.jpg?v=1583387696");
+    background-size: 569px;
+    height: 400px;
+    margin-bottom: 20px;
+    margin-left: 66.5%;
+    margin-top: -435px;
+    width: 30.5%;
+
+    &__background{
+      border-radius: 3px;
+      height: 100%;
+      width: 100%;
+    }
+
+    &__title{
+      font-size: 38px;
+      height: 50px;
+      letter-spacing: 0px;
+      line-height: 56px;
+      padding-top: 100px;
+    }
+
+    &__text{
+      font-size: 86px;
+      line-height: 82px;
+    }
+  }
+
+  .sailors-and-pirates{
+    background-color: hsla(212, 16%, 45%, 0.1);
+    display: inline-block;
+    height: 285px;
+    margin-left: 2.5%;
+    width: 46.5%;
+
+    &__background{
+      background-position: right top;
+      background-size: 412px;
+      height: 284px;
+      width: 100%;
+    }
+
+    &__content{
+      background-image: linear-gradient(to right, hsl(0, 0%, 93%) 50%, hsla(0, 0%, 93%, 0) 85%);
+      border-radius: 3px;
+      height: 285px;
+      transform: translate(0px, -305px);
+      width: 560px;
+    }
+
+    &__content--title{
+      font-size: 29px;
+      letter-spacing: -1px;
+      margin-left: 34px;
+      margin-top: 21px;
+      padding-bottom: 15.3px;
+      padding-top: 50px;
+      padding-top: 52x;
+      text-align: left;
+      width: 45.9%;
+    }
+
+    &__content--text{
+      font-size: 16px;
+      letter-spacing: 0.5px;
+      margin-bottom: 30px;
+      width: 51.4%;
+    }
+
+    &__content--button{
+      background-color: hsla(212, 16%, 45%, 0.1);
+      border-radius: 3px;
+      border: solid 2px hsl(212, 16%, 46%);
+      font-size: 24px;
+      height: 50px;
+      transform: translate(-92%, 0);
+      width: 50.9%;
+    }
+  }
+
+  .archeologist {
+    display: inline-block;
+    height: 285px;
+    margin-left: 1.3%;
+    margin-right: 2.5%;
+    width: 46.5%;
+
+    &__content {
+      background-image: linear-gradient(to right, hsl(33, 38%, 58%) 32%, hsla(32, 38%, 46%, 0) 78%);
+      height: 285px;
+      transform: translate(0px, -316px);
+    }
+
+    &__background {
+      background-position: right top;
+      height: 285px;
+      transform: translate(0, -2px);
+    }
+
+    &__content--button {
+      border-radius: 3px;
+      font-size: 24px;
+      height: 50px;
+      left: 0;
+      margin-left: 5.3%;
+      margin-top: 30.2px;
+      transform: translate(0, 0);
+      width: 258px;
+    }
+
+    &__content--text {
+      font-size: 17px;
+      height: 57px;
+      margin-bottom: 0;
+      margin-left: 3%;
+      width: 274px;
+    }
+
+    &__content--title {
+      font-size: 29px;
+      letter-spacing: -1px;
+      margin-left: 52px;
+      padding-top: 52px;
+      text-align: left;
+    }
+  }
+
+  .featured-toys{
+    background: transparent;
+    height: 541px;
+    margin: -180px 2.5% 19px 2.5%;
+
+    &__title{
+      font-size: 32px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+  }
+
+  .featured-products{
+    height: 500px;
+
+    &__item {
+      background:#f0f0f0;
+      height: 471.5px;
+      margin: auto;
+      opacity: 1;
+      width: 24%;
+    }
+
+    &__item:nth-child(1) {
+      margin-left: 0;
+    }
+
+    &__item:nth-child(4) {
+      margin-right: 0;
+    }
+
+    &__item:nth-child(2) > img:nth-child(1) {
+      width: 72%;
+      height: 37%;
+    }
+
+    &__item--image{
+      margin: auto;
+    }
+
+    &__item--title{
+      font-size: 24px;
+      margin-left: 13px;
+      margin-top: auto;
+    }
+
+    &__item--price{
+      font-size: 30px;
+      margin: 0 0 3px 13px;
+    }
+
+    &__item--button{
+      font-size: 27px;
+      height: 50px;
+      margin: 0 13px 21.5px 19px;
+      text-align: center;
+      width: 91.3%;
+    }
+
+    &__item--button:hover{
+      background: #f47f0d;
+    }
+  }
+
+//wooden-toys
+  .wooden-toys{
+    display: inline-block;
+    margin-left: 2.5%;
+    margin-top: 40px;
+    width: 22.6%;
+
+    &__background{
+      background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/shutterstock_219082657-1024x819.jpg?v=1583510228");
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 320px;
+      width: 100%;
+    }
+
+    &__content{
+      height: 171px;
+      transform: translate(0px, -171px);
+    }
+
+    &__content--title{
+      font-size: 50px;
+      transform: translate(0px, -420px);
+      width: 191px;
+    }
+   }
+
+   .plush-toys{
+     display: inline-block;
+     width: 46.5%;
+     height: 320px;
+     transform: translate(0,-146px);
+     margin-left: 20px;
+     margin-right: 20px;
+
+     &__background{
+       background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-portrait-of-a-little-girl-with-a-toy-bunny-pilot-in-the-interior-161017601.jpg?v=1583510836");
+       height: 320px;
+     }
+
+     &__content--title{
+      font-size: 50px;
+      transform: translate(0px, -275px);
+
+     }
+   }
+
+   .outdoors{
+     display: inline-block;
+     height: 320px;
+     transform: translate(0,-146px);
+     width: 22.6%;
+
+     &__background{
+      background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-two-young-children-on-a-swing-sunny-summer-day-251219917.jpg?v=1583510647");
+      height: 320px;
+      width: 100%;
+     }
+
+     &__content--title{
+      font-size: 50px;
+      transform: translate(0px, -275px);
+     }
+   }
+
+   .scroll-up {
+     display: none;
+   }
 }
