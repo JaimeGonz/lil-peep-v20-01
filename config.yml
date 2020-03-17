@@ -1,4 +1,5 @@
 development:
   password: c0d32d52054f8eb40341fb2ed6611477
-  theme_id: "91895234697"
+  # theme_id: "91895234697" --Jaime theme
+  theme_id: "88624791689"
   store: lil-peep-v20-01.myshopify.com
