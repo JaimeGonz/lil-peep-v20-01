@@ -52,21 +52,19 @@
 
 
 
-@media (min-width: 600px) {
+@media (min-width: 700px) {
 
   .treasure-island {
     height: 400px;
     margin-bottom: 0;
     margin-left: 2.5%;
     width: 62.5%;
-    // min-width: 635px;
 
     &__background{
       background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/shutterstock_187114202.jpg?v=1583385244") !important;
       border-radius: 3px;
       height: 400px !important;
       transform: translate(0px,0px);
-      // width: 635px !important;
       width: auto;
     }
 
@@ -79,14 +77,14 @@
     }
 
     &__content--title{
-      font-size: 32px;
+      font-size: 29px;
       margin-right: 5%;
       margin-top: 20px;
       text-align: right;
     }
 
     &__content--text{
-      font-size: 21px;
+      font-size: 16px;
       letter-spacing: 0.5px;
       margin-left: 53%;
       text-align: center;
@@ -95,15 +93,28 @@
 
     &__content--button{
       border-radius: 3px;
-      font-size: 30px;
-      height: 70px;
-      // transform: translate(19%,0);
-      width: 285px;
+      font-size: 24px;
+      height: 50px;
       margin-left: 25%;
+      width: 38%;
     }
   }
 }
 
+@media (min-width:900px){
+  .treasure-island__content--title{
+    font-size: 30px;
+  }
+
+  .treasure-island__content--text{
+    font-size: 19px;
+  }
+
+  .treasure-island__content--button {
+    font-size: 30px;
+    height: 77px;
+  }
+}
 
 @media (min-width:1000px){
 
@@ -115,11 +126,15 @@
 @media (min-width: 1260px) {
 
   .treasure-island__content--title {
+    font-size: 32px;
     margin-right: 109px;
   }
 
+  .treasure-island__content--text {
+    font-size: 21px;
+  }
+
   .treasure-island__content--button {
-    height: 77px;
     margin-left: 0;
     transform: translate(19%,0);
     width: 320px;
