@@ -34,8 +34,6 @@ body{
   }
 }
 
-
-//Sailors and pirates kit section
 .sailors-and-pirates{
   height: 250px;
   position: relative;
@@ -85,7 +83,6 @@ body{
   }
 }
 
-//Archeologist section
 .archeologist{
   height: 240px;
   position: relative;
@@ -137,8 +134,6 @@ body{
   }
 }
 
-
-//featured-collections
 .featured-toys {
   background: rgb(240, 240, 240);
   height: 340px;
@@ -155,7 +150,6 @@ body{
     text-transform: uppercase;
   }
 }
-
 
 .featured-products{
   display: flex;
@@ -334,7 +328,6 @@ body{
   display: none;
 }
 
-//Wooden toys
 .wooden-toys {
   height: 150px;
 
@@ -369,7 +362,6 @@ body{
   }
 }
 
-//Plush toys
 .plush-toys {
   height: 150px;
 
@@ -404,7 +396,6 @@ body{
   }
 }
 
-//Outdoors
 .outdoors {
   height: 150px;
 
@@ -439,7 +430,6 @@ body{
   }
 }
 
-//scroll up button
 .scroll-up {
   background-color: hsl(0,0%,98%);
   margin-bottom: 20px;
@@ -471,10 +461,7 @@ body{
   }
 }
 
-
-
-@media (min-width: 600px) {
-
+@media (min-width: 700px) {
 
   .discount{
     background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-beach-toys-in-the-sand-256927513_bfeaa15a-e289-4c90-bf9b-4f4c02734508.jpg?v=1583387696");
@@ -492,15 +479,15 @@ body{
     }
 
     &__title{
-      font-size: 38px;
+      font-size: 30px;
       height: 50px;
       letter-spacing: 0px;
-      line-height: 56px;
+      line-height: 30px;
       padding-top: 100px;
     }
 
     &__text{
-      font-size: 86px;
+      font-size: 60px;
       line-height: 82px;
     }
   }
@@ -557,6 +544,17 @@ body{
     }
   }
 
+  .featured-toys{
+    // background: transparent;
+    margin: -180px 2.5% 19px 2.5%;
+
+    &__title{
+      font-size: 32px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
+  }
+
   .archeologist {
     display: inline-block;
     height: 285px;
@@ -604,71 +602,6 @@ body{
     }
   }
 
-  .featured-toys{
-    background: transparent;
-    height: 541px;
-    margin: -180px 2.5% 19px 2.5%;
-
-    &__title{
-      font-size: 32px;
-      margin-bottom: 25px;
-      text-align: left;
-    }
-  }
-
-  .featured-products{
-    height: 500px;
-
-    &__item {
-      background:#f0f0f0;
-      height: 471.5px;
-      margin: auto;
-      opacity: 1;
-      width: 24%;
-    }
-
-    &__item:nth-child(1) {
-      margin-left: 0;
-    }
-
-    &__item:nth-child(4) {
-      margin-right: 0;
-    }
-
-    &__item:nth-child(2) > img:nth-child(1) {
-      width: 72%;
-      height: 37%;
-    }
-
-    &__item--image{
-      margin: auto;
-    }
-
-    &__item--title{
-      font-size: 24px;
-      margin-left: 13px;
-      margin-top: auto;
-    }
-
-    &__item--price{
-      font-size: 30px;
-      margin: 0 0 3px 13px;
-    }
-
-    &__item--button{
-      font-size: 27px;
-      height: 50px;
-      margin: 0 13px 21.5px 19px;
-      text-align: center;
-      width: 91.3%;
-    }
-
-    &__item--button:hover{
-      background: #f47f0d;
-    }
-  }
-
-//wooden-toys
   .wooden-toys{
     display: inline-block;
     margin-left: 2.5%;
@@ -693,47 +626,129 @@ body{
       transform: translate(0px, -420px);
       width: 191px;
     }
-   }
+    }
 
-   .plush-toys{
-     display: inline-block;
-     width: 46.5%;
-     height: 320px;
-     transform: translate(0,-146px);
-     margin-left: 20px;
-     margin-right: 20px;
+  .plush-toys{
+    display: inline-block;
+    width: 46.5%;
+    height: 320px;
+    transform: translate(0,-146px);
+    margin-left: 20px;
+    margin-right: 20px;
 
-     &__background{
-       background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-portrait-of-a-little-girl-with-a-toy-bunny-pilot-in-the-interior-161017601.jpg?v=1583510836");
-       height: 320px;
-     }
-
-     &__content--title{
-      font-size: 50px;
-      transform: translate(0px, -275px);
-
-     }
-   }
-
-   .outdoors{
-     display: inline-block;
-     height: 320px;
-     transform: translate(0,-146px);
-     width: 22.6%;
-
-     &__background{
-      background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-two-young-children-on-a-swing-sunny-summer-day-251219917.jpg?v=1583510647");
+    &__background{
+      background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-portrait-of-a-little-girl-with-a-toy-bunny-pilot-in-the-interior-161017601.jpg?v=1583510836");
       height: 320px;
-      width: 100%;
-     }
+    }
 
-     &__content--title{
-      font-size: 50px;
-      transform: translate(0px, -275px);
-     }
-   }
+    &__content--title{
+    font-size: 50px;
+    transform: translate(0px, -275px);
 
-   .scroll-up {
-     display: none;
-   }
+    }
+  }
+
+  .outdoors{
+    display: inline-block;
+    height: 320px;
+    transform: translate(0,-146px);
+    width: 22.6%;
+
+    &__background{
+    background-image: url("//cdn.shopify.com/s/files/1/0329/8453/1081/files/stock-photo-two-young-children-on-a-swing-sunny-summer-day-251219917.jpg?v=1583510647");
+    height: 320px;
+    width: 100%;
+    }
+
+    &__content--title{
+    font-size: 50px;
+    transform: translate(0px, -275px);
+    }
+  }
+
+  .scroll-up {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+
+  .discount{
+
+    &__title{
+      // line-height: 56px;
+      font-size: 38px;
+    }
+
+    &__text{
+      font-size: 86px;
+    }
+  }
+}
+
+@media (min-width: 1220px) {
+
+  .discount{
+
+    &__title{
+      line-height: 56px;
+    }
+  }
+
+  .featured-toys{
+      background: transparent;
+      height: 541px;
+    }
+
+    .featured-products{
+      height: 500px;
+
+      &__item {
+        background:#f0f0f0;
+        height: 471.5px;
+        margin: auto;
+        opacity: 1;
+        width: 24%;
+      }
+
+      &__item:nth-child(1) {
+        margin-left: 0;
+      }
+
+      &__item:nth-child(4) {
+        margin-right: 0;
+      }
+
+      &__item:nth-child(2) > img:nth-child(1) {
+        width: 72%;
+        height: 37%;
+      }
+
+      &__item--image{
+        margin: auto;
+      }
+
+      &__item--title{
+        font-size: 24px;
+        margin-left: 13px;
+        margin-top: auto;
+      }
+
+      &__item--price{
+        font-size: 30px;
+        margin: 0 0 3px 13px;
+      }
+
+      &__item--button{
+        font-size: 27px;
+        height: 50px;
+        margin: 0 13px 21.5px 19px;
+        text-align: center;
+        width: 91.3%;
+      }
+
+      &__item--button:hover{
+        background: #f47f0d;
+      }
+    }
 }
