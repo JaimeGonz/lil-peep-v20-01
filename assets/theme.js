@@ -7571,4 +7571,25 @@ $(document).ready(function () {
       });
     });
   }
+
+  if ($(window).width() < 800) {
+    $('.collection-slider').each(function () {
+      $(this).slick({
+        slidesToShow: 2,
+        nextArrow: '<i class="next-arrow fas fa-chevron-right"></i>',
+        prevArrow: '<i class="prev-arrow fas fa-chevron-left"></i>'
+      });
+    });
+  }
+
+  if ($(window).width() < 1220) {
+    $('.collection-slider').each(function () {
+      $(this).slick({
+        slidesToShow: 3,
+        nextArrow: '<i class="next-arrow fas fa-chevron-right"></i>',
+        prevArrow: '<i class="prev-arrow fas fa-chevron-left"></i>'
+      });
+    });
+  }
+
 });

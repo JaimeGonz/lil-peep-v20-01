@@ -1,7 +1,11 @@
-@media (min-width: 600px) {
+.background{
+  height: 1821px;
+}
+
+@media (min-width: 700px) {
   .background{
     background-color: #fafafa;
-    height: 1692px;
+    height: 1485px;
     margin: 0 auto;
     max-width: 1440px;
     position: relative;
@@ -9,5 +13,11 @@
   }
   .index-section {
     height: 1695px;
+  }
+}
+
+@media (min-width: 1220px) {
+  .background{
+    height: 1692px;
   }
 }
