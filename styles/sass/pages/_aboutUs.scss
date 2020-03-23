@@ -10,33 +10,33 @@ h1{
 .hero {
     position: relative;
     height: 447px;
-}
-  
-.hero__image {
-    height: 250px;
-}
-
-.hero__description {
-    background-image: linear-gradient(to bottom, hsla(26, 14%, 78%, 0) -4%, hsl(26, 14%, 78%) 40%);
-    height: 337px;
-    padding-bottom: 31px;
-    transform: translateY(-190px);
-    width: 100%;
-}
-
-.hero__description-title {
-    font-size: 21px;
-    padding-top: 171px;
-    color: #FFFF;
+    
+  &__image {
+      height: 250px;
   }
-
-.hero__desciption-body {
-    margin: 0 8px;
-    color: #FFFF;
-}
-
-.hero__gradient{
-    display: none;
+  
+  &__description {
+      background-image: linear-gradient(to bottom, hsla(26, 14%, 78%, 0) -4%, hsl(26, 14%, 78%) 40%);
+      height: 337px;
+      padding-bottom: 31px;
+      transform: translateY(-190px);
+      width: 100%;
+  }
+  
+  &__description-title {
+      font-size: 21px;
+      padding-top: 171px;
+      color: #FFFF;
+    }
+  
+  &__desciption-body {
+      margin: 0 8px;
+      color: #FFFF;
+  }
+  
+  &__gradient{
+      display: none;
+  }
 }
 
 .our-story {
@@ -44,52 +44,60 @@ h1{
     border: solid 1px hsl(0, 0%, 92%);
     background-color: hsl(0, 0%, 100%);
     height: 483px;
+
+    &__title{
+        font-size: 22px;
+        margin-bottom: 11px;
+    }
+    
+    &__description > p:nth-child(2) {
+        font-size: 15px;
+        margin: 0px 8px 14px 8px;
+    }
+      
+    &__description > p:nth-child(3) {
+        font-size: 15px;
+        margin: 14px 8px;
+    }
+    
+    &__description > p:nth-child(4) {
+        font-size: 15px;
+        margin: 14px 8px;
+    }
+    
+    &__description > p:nth-child(5) {
+        font-size: 15px;
+        margin: 14px 8px;
+    }
+    
+    &__description > p:nth-child(6) {
+        font-size: 15px;
+        margin: 14px 8px;
+    }
 }
 
-.our-story__title{
-    font-size: 22px;
-    margin-bottom: 11px;
+.next-story{
+
+    &__title{
+        font-size: 22px;
+        margin: 27px auto 14px auto;
+    }
+    
+    &__body {
+        margin: 0 8px 28px 8px;
+        font-size: 15px;
+    }
 }
 
-.our-story > p:nth-child(2) {
-    font-size: 15px;
-    margin: 0px 8px 14px 8px;
-}
-  
-.our-story > p:nth-child(3) {
-    font-size: 15px;
-    margin: 14px 8px;
-}
-
-.our-story > p:nth-child(4) {
-    font-size: 15px;
-    margin: 14px 8px;
-}
-
-.our-story > p:nth-child(5) {
-    font-size: 15px;
-    margin: 14px 8px;
-}
-
-.our-story > p:nth-child(6) {
-    font-size: 15px;
-    margin: 14px 8px;
-}
-
-.next-story__title{
-    font-size: 22px;
-    margin: 27px auto 14px auto;
-}
-
-.next-story__body {
-    margin: 0 8px 28px 0;
-    font-size: 15px;
-}
-  
-.next-story__img{
+.img-in-next-story{
+    width: 320px;
     height: 250px;
 }
 
+.desktop-images{
+    display: none;
+}
+  
 //scroll up button
 .scroll-up {
     background-color: hsl(0,0%,98%);
@@ -133,51 +141,135 @@ h1{
         margin: 0 auto;
         border-radius: 3px;
         height: 400px;
-    }
 
-    .our-story{
-        width: 1369px;
-        margin: 17px auto 0 auto;
+        &__description {
+            background-color: hsl(26, 14%, 78%);
+            width: 601px;
+            height: 400px;
+            position: relative;
+            padding: 0;
+            z-index: 99;
+            transform: translateY(-438px);
+        }
+        
+        &__image {
+            height: 400px;
+            width: 810px;
+            margin-left: auto;
+        }
+        
+        &__description-title {
+            font-size: 38px;
+            padding-top: 111px;
+            transform: translateX(12.4%);
+        }
+        
+        &__desciption-body {
+            font-size: 24px;
+            margin-top: -19px;
+            transform: translateX(12.4%);
+        }
+        
+        &__gradient {
+            display: block;
+            width: 400px;
+            height: 400px;
+            transform: rotate(-90deg);
+            background-image: linear-gradient(to bottom, hsl(26, 14%, 78%) 23%, hsla(26, 14%, 78%, 0) 81%);
+            position: absolute;
+            transform: translate(600px, -838px) rotate(-90deg);
+            z-index: 0;
+        }
     }
   
-    .hero__description {
-        background-color: hsl(26, 14%, 78%);
-        width: 601px;
-        height: 400px;
-        position: relative;
-        padding: 0;
-        z-index: 99;
-        transform: translateY(-438px);
+
+    .our-story {
+      height: 377px;
+      width: 1369px;
+      margin: 17px auto 0 auto;
+
+      &__title {
+          font-size: 30px;
+      }
+  
+      &__description {
+          columns: 562px 2;
+          margin: auto 8.1% auto 8.1%;
+      }
+  
+      &__description > p:nth-child(1) {
+          font-size: 21px;
+          text-align: left;
+          margin: none;
+      }
+      
+      &__description > p:nth-child(2) {
+          font-size: 21px;
+          text-align: left;
+          margin: none;
+      }
+      
+      &__description > p:nth-child(3) {
+          font-size: 21px;
+          text-align: left;
+          padding-top: 21px;
+          margin: none;
+      }
+      
+      &__description > p:nth-child(4) {
+          font-size: 21px;
+          text-align: left;
+          margin: none;
+      }
+      
+      &__description > p:nth-child(5) {
+          font-size: 21px;
+          text-align: left;
+          margin: none;
+      }
+    }
+  
+
+    .next-story {
+        margin-top: 38px;
+        width: 684px;
+        height: 350px;
+        transform: translateY(-42px);
+        display: inline-block;
+
+        &__title {
+        font-size: 34px;
+        padding-top: 70px;
+        }
+        
+        &__body {
+        font-size: 22px;
+        margin: auto 83px;
+        }
+    }  
+
+    .img-in-next-story {
+    width: 684px;
+    height: 350px;
+    display: inline-block;
+    margin-top: 38.5px;
     }
     
-    .hero__image {
-        height: 400px;
-        width: 810px;
-        margin-left: auto;
-    }
-    
-    .hero__description-title {
-        font-size: 38px;
-        padding-top: 111px;
-        transform: translateX(12.4%);
-    }
-    
-    .hero__desciption-body {
-        font-size: 24px;
-        margin-top: -19px;
-        transform: translateX(12.4%);
-    }
-    
-    .hero__gradient {
+    .desktop-images {
         display: block;
-        width: 400px;
+        transform: translateY(-50px);
+    }  
+    
+    .desktop-images img {
         height: 400px;
-        transform: rotate(-90deg);
-        background-image: linear-gradient(to bottom, hsl(26, 14%, 78%) 23%, hsla(26, 14%, 78%, 0) 81%);
-        position: absolute;
-        transform: translate(600px, -838px) rotate(-90deg);
-        z-index: 0;
+        width: 440px;
+        margin: 32.5px auto 42px auto;
     }
+ 
+  .desktop-images > img:nth-child(2) {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
   
 }
   
