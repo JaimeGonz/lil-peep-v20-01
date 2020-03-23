@@ -2,6 +2,11 @@
     text-align: center;
   }
 
+h1{
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
 .hero {
     position: relative;
     height: 447px;
@@ -22,10 +27,16 @@
 .hero__description-title {
     font-size: 21px;
     padding-top: 171px;
+    color: #FFFF;
   }
 
-.hero_desciption-body {
+.hero__desciption-body {
     margin: 0 8px;
+    color: #FFFF;
+}
+
+.hero__gradient{
+    display: none;
 }
 
 .our-story {
@@ -71,10 +82,14 @@
 }
 
 .next-story__body {
-margin: 0 8px 28px 0;
-font-size: 15px;
+    margin: 0 8px 28px 0;
+    font-size: 15px;
 }
   
+.next-story__img{
+    height: 250px;
+}
+
 //scroll up button
 .scroll-up {
     background-color: hsl(0,0%,98%);
@@ -112,4 +127,57 @@ font-size: 15px;
     .scroll-up {
         display: none;
       }
+
+    .hero{
+        width: 1369px;
+        margin: 0 auto;
+        border-radius: 3px;
+        height: 400px;
+    }
+
+    .our-story{
+        width: 1369px;
+        margin: 17px auto 0 auto;
+    }
+  
+    .hero__description {
+        background-color: hsl(26, 14%, 78%);
+        width: 601px;
+        height: 400px;
+        position: relative;
+        padding: 0;
+        z-index: 99;
+        transform: translateY(-438px);
+    }
+    
+    .hero__image {
+        height: 400px;
+        width: 810px;
+        margin-left: auto;
+    }
+    
+    .hero__description-title {
+        font-size: 38px;
+        padding-top: 111px;
+        transform: translateX(12.4%);
+    }
+    
+    .hero__desciption-body {
+        font-size: 24px;
+        margin-top: -19px;
+        transform: translateX(12.4%);
+    }
+    
+    .hero__gradient {
+        display: block;
+        width: 400px;
+        height: 400px;
+        transform: rotate(-90deg);
+        background-image: linear-gradient(to bottom, hsl(26, 14%, 78%) 23%, hsla(26, 14%, 78%, 0) 81%);
+        position: absolute;
+        transform: translate(600px, -838px) rotate(-90deg);
+        z-index: 0;
+    }
+  
 }
+  
