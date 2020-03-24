@@ -5,8 +5,9 @@
   "main": "theme.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watcher": "theme watch",
-    "watch": "webpack --watch"
+    "watch:themekit": "theme watch",
+    "watch:webpack": "npx webpack --watch --mode=development",
+    "watch": "concurrently -r -k npm:watch:*"
   },
   "author": "",
   "license": "ISC",
@@ -15,8 +16,10 @@
     "node-sass": "^4.13.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.1.3",
-    "webpack": "^4.41.6",
+    "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"
   },
-  "dependencies": {}
+  "dependencies": {
+    "concurrently": "^5.1.0"
+  }
 }
