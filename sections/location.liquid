@@ -1,0 +1,32 @@
+<div class="get-in-touch__container-location">
+  <div class="get-in-touch__map get-in-touch__map--cropped">
+    <img src="{{section.settings.map_image | img_url: '800x'}}">
+  </div>
+
+  <div class="get-in-touch__address">
+    <img class="get-in-touch__address__image" src="{{section.settings.address_image | img_url: '600x'}}">
+    <span class="get-in-touch__address__title">COME VISIT!</span>
+    <p class="get-in-touch__address__text">
+      You can findus at: <br>
+      3798 Somerset Drive <br>
+      Apple Valley, CA 92307
+    </p>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Location",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "map_image",
+      "label": "Map image"
+    }, {
+      "type": "image_picker",
+      "id": "address_image",
+      "label": "Address background"
+    }
+  ]
+}
+{% endschema %}
