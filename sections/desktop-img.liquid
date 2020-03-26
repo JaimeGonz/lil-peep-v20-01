@@ -1,0 +1,32 @@
+<div class="desktop-images">
+    <img src="{{section.settings.desktop_image_1 | img_url: '800x'}}">
+    <img src="{{section.settings.desktop_image_2 | img_url: '800x'}}">
+    <img src="{{section.settings.desktop_image_3 | img_url: '800x'}}">
+</div>
+
+{% schema %}
+  {
+    "blocks": [
+      {
+        "type": "block_image",
+        "name": "Block image",
+        "max_blocks": 3,
+        "settings": [
+        {
+          "type": "image_picker",
+          "id": "desktop_image_1",
+          "label": "Desktop image 1"
+        }, {
+          "type": "image_picker",
+          "id": "desktop_image_2",
+          "label": "Desktop image 2"
+        }, {
+            "type": "image_picker",
+            "id": "desktop_image_3",
+            "label": "Desktop image 3"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}
