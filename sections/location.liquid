@@ -1,6 +1,7 @@
 <div class="get-in-touch__container-location">
-  <div class="get-in-touch__map get-in-touch__map--cropped">
-    <img src="{{section.settings.map_image | img_url: '800x'}}">
+  <div class="get-in-touch__map">
+    <img class="get-in-touch__map__img--mobile" src="{{section.settings.map_image_mobile | img_url: '800x'}}">
+    <img class="get-in-touch__map__img--desktop" src="{{section.settings.map_image_desktop | img_url: '800x'}}">
   </div>
 
   <div class="get-in-touch__address">
@@ -20,8 +21,12 @@
   "settings": [
     {
       "type": "image_picker",
-      "id": "map_image",
-      "label": "Map image"
+      "id": "map_image_mobile",
+      "label": "Map image for mobile version"
+    }, {
+      "type": "image_picker",
+      "id": "map_image_desktop",
+      "label": "Map image for desktop version"
     }, {
       "type": "image_picker",
       "id": "address_image",
