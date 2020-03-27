@@ -4,6 +4,20 @@ a{
 
 .route {
   display: none;
+
+  @media (min-width: 700px) {
+    color: #637488;
+    display: flex;
+    font-size: 20px;
+    margin-left: 2.5%;
+  }
+}
+
+.route:before {
+  @media (min-width: 700px) {
+    color: hsl(212, 72%, 59%);
+    content: "HOME ";
+  }
 }
 
 .title{
@@ -14,15 +28,26 @@ a{
   margin: 10px auto;
   text-align: center;
   text-transform: uppercase;
+
+  @media (min-width: 700px) {
+    font-size: 34px;
+    margin-bottom: 32px;
+    opacity: 0.7;
+  }
 }
 
 .get-in-touch{
   background: #fff;
   border: solid 1px hsl(0, 0%, 92%);
   height: 725px;
-  text-align: center;
   margin: 0 auto;
+  text-align: center;
   width: 100%;
+
+  @media (min-width: 700px) {
+    height: 946px;
+    width: 94.5%;
+  }
 
   &__title{
     display: block;
@@ -30,12 +55,22 @@ a{
     letter-spacing: -0.5px;
     margin: 0 auto;
     padding-top: 25px;
+
+    @media (min-width: 700px) {
+      font-size: 30px;
+      padding-top: 35px;
+    }
   }
 
   &__text{
     font-size: 15px;
     margin: 15px auto;
     width: 90%;
+
+    @media (min-width: 700px) {
+      font-size: 22px;
+      width: 50%;
+    }
   }
 
   &__icons{
@@ -55,15 +90,72 @@ a{
     }
   }
 
-  &__form{
+  &__form {
     display: block;
+    margin: 0 auto;
     padding-top: 30px;
     text-align: left;
+    width: 304px;
+
+    @media (min-width: 700px) {
+      width: auto;
+    }
+
+    &__container {
+      @media (min-width: 700px) {
+        display: inline-block;
+        width: 24.5%;
+      }
+    }
+
+    &__container:nth-child(1) {
+      text-align: left;
+
+      @media (min-width: 700px) {
+        margin-left: 25.3%;
+      }
+    }
+
+    &__container:nth-child(2) {
+      text-align: left;
+    }
+
+    &__container:nth-child(1) > span:nth-child(1) {
+      @media (min-width: 700px) {
+        margin: 0;
+      }
+    }
+
+    &__container:nth-child(1) > input:nth-child(2) {
+      @media (min-width: 700px) {
+        margin: 15px 0;
+        width: 95%;
+      }
+    }
+
+    &__container:nth-child(2) > span:nth-child(1) {
+      @media (min-width: 700px) {
+        margin-left: 6px;
+      }
+    }
+
+    &__container:nth-child(2) > input:nth-child(2) {
+      @media (min-width: 700px) {
+        font-size: 17px;
+        margin-left: 6px;
+        padding-left: 10px;
+        text-align: left;
+        width: 97%;
+      }
+    }
 
     &__title{
       color: #627387;
       font-size: 22px;
-      margin-left: 6px;
+
+      @media (min-width: 700px) {
+        margin-left: 25.3%;
+      }
     }
 
     &__input{
@@ -75,6 +167,11 @@ a{
       height: 37px;
       margin: 5px auto;
       width: 304px;
+
+      @media (min-width: 700px) {
+        margin: 15px auto;
+        width: 49.1%;
+      }
     }
 
     &__input--phone{
@@ -83,6 +180,10 @@ a{
 
     &__input--message{
       height: 77px;
+
+      @media (min-width: 700px) {
+        height: 145px;
+      }
     }
 
     &__button{
@@ -95,6 +196,13 @@ a{
       height: 40px;
       margin: 21px auto;
       width: 304px;
+
+      @media (min-width: 700px) {
+        border-radius: 3px;
+        height: 77px;
+        margin-top: 55.3px;
+        width: 320px;
+      }
     }
 
     &__button:hover{
@@ -102,15 +210,42 @@ a{
     }
   }
 
+  &__container-location {
+    @media (min-width: 700px) {
+      display: flex;
+      flex-direction: row-reverse;
+      height: 300px;
+      margin: 13px auto 40px;
+      width: 94.5%;
+    }
+  }
+
   &__map{
     height: 300px;
     margin-top: 21px;
-    width: 100%;
     overflow: hidden;
-  }
+    width: 100%;
 
-  &__map--cropped img {
-      margin: 0px 0px 0px -180px;
+    &__img--mobile {
+      display: block;
+      width: 100%;
+
+      @media (min-width: 500px) {
+        display: none;
+      }
+    }
+
+    &__img--desktop {
+      display: none;
+
+      @media (min-width: 500px) {
+        display: block;
+      }
+    }
+
+    @media (min-width: 700px) {
+      margin: 0;
+    }
   }
 
   &__address{
@@ -121,9 +256,18 @@ a{
     opacity: 0.9;
     width: 100%;
 
+    @media (min-width: 700px) {
+      height: 300px;
+      margin-bottom: 30px;
+    }
+
     &__image{
-      width: 100%;
       opacity: 0.04;
+      width: 100%;
+
+      @media (min-width: 700px) {
+        opacity: 0.09;
+      }
     }
 
     &__title{
@@ -132,133 +276,20 @@ a{
       margin-top: -150px;
       padding-top: 0;
       text-align: center;
+
+      @media (min-width: 700px) {
+        font-size: 32px;
+        margin-top: -227px;
+      }
     }
 
     &__text{
       font-size: 18px;
       text-align: center;
-    }
-  }
-}
 
-@media (min-width: 700px) {
-  .route {
-    display: block;
-    font-size: 20px;
-    margin-left: 2.5%;
-    color: #637488;
-  }
-
-  .route:before {
-    color: hsl(212, 72%, 59%);
-    content: "HOME ";
-  }
-
-  .title {
-    font-size: 34px;
-    margin-bottom: 32px;
-    opacity: 0.7;
-  }
-
-  .get-in-touch {
-    height: 946px;
-    width: 94.5%;
-
-    &__title {
-      font-size: 30px;
-      padding-top: 35px;
-    }
-
-    &__text{
-      font-size: 22px;
-      width: 50%;
-    }
-
-    &__form {
-
-      &__container {
-        display: inline-block;
-        width: 24.5%;
-      }
-
-      &__container:nth-child(1) {
-        margin-left: 25.3%;
-      }
-
-      &__container:nth-child(1) > span:nth-child(1) {
-        margin: 0;
-      }
-
-      &__container:nth-child(1) > input:nth-child(2) {
-        margin: 15px 0;
-        width: 95%;
-      }
-
-      &__container:nth-child(2) > span:nth-child(1) {
-        margin-left: 6px;
-      }
-
-      &__container:nth-child(2) > input:nth-child(2) {
-        font-size: 17px;
-        margin-left: 6px;
-        padding-left: 10px;
-        text-align: left;
-        width: 97%;
-      }
-
-      &__title {
-        margin-left: 25.3%;
-      }
-
-      &__input {
-        margin: 15px auto;
-        width: 49.1%;
-      }
-
-      &__input:nth-child(8) {
-        height: 145px;
-      }
-
-      &__button {
-        border-radius: 3px;
-        height: 77px;
-        margin-top: 55.3px;
-        width: 320px;
-      }
-    }
-
-    &__container-location {
-      display: flex;
-      flex-direction: row-reverse;
-      height: 300px;
-      margin: 13px auto 40px;
-      width: 94.5%;
-    }
-
-    &__address {
-      height: 300px;
-      margin-bottom: 30px;
-
-      &__image {
-        opacity: 0.09;
-      }
-
-      &__title {
-        font-size: 32px;
-        margin-top: -227px;
-      }
-
-      &__text {
+      @media (min-width: 700px) {
         font-size: 21px;
       }
-    }
-
-    &__map {
-      margin: 0;
-    }
-
-    &__map--cropped img {
-      margin: 0;
     }
   }
 }
