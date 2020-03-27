@@ -1,302 +1,271 @@
 * {
-    text-align: center;
-  }
+  text-align: center;
+}
 
 h1{
-    font-weight: normal;
-    text-transform: uppercase;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .background{
+  height: auto;
+
+  @media (min-width: 800px){  
     height: auto;
+  }
+}
+
+.route{
+  @media (min-width: 800px){  
+    color: #637488;
+    display: block;
+    font-size: 20px;
+    margin-left: 2.5%;
+    text-align: left;
+  }
+}
+
+.route:before{
+  @media (min-width: 800px){
+    color: hsl(212, 72%, 59%);
+    content: "HOME ";
+  }
 }
 
 .hero {
-    position: relative;
-    height: 447px;
-    
+  height: 447px;
+  position: relative;
+  
   &__image {
-      height: 250px;
+    height: 250px;
   }
-  
+
   &__description {
-      background-image: linear-gradient(to bottom, hsla(26, 14%, 78%, 0) -4%, hsl(26, 14%, 78%) 40%);
-      height: 337px;
-      padding-bottom: 31px;
-      transform: translateY(-190px);
-      width: 100%;
+    background-image: linear-gradient(to bottom, hsla(26, 14%, 78%, 0) -4%, hsl(26, 14%, 78%) 40%);
+    height: 337px;
+    padding-bottom: 31px;
+    transform: translateY(-190px);
+    width: 100%;
   }
-  
+
   &__description-title {
-      font-size: 21px;
-      padding-top: 171px;
-      color: #FFFF;
+    color: #FFFF;
+    font-size: 21px;
+    padding-top: 171px;
     }
-  
+
   &__desciption-body {
-      margin: 0 8px;
-      color: #FFFF;
+    color: #FFFF;
+    margin: 0 8px;
   }
-  
+
   &__gradient{
-      display: none;
+    display: none;
+  }
+
+  @media (min-width: 800px){  
+    margin: 0 2.5%;
+    width: 95%;
+  }
+
+  @media (min-width:1000px){
+    border-radius: 3px;
+    height: 400px;
+
+    &__description {
+      background-color: hsl(26, 14%, 78%);
+      height: 400px;
+      padding: 0;
+      position: relative;
+      transform: translateY(-438px);
+      width: 601px;
+      z-index: 99;
+    }
+    
+    &__image {
+      height: 400px;
+      margin-left: auto;
+      width: 810px;
+    }
+    
+    &__description-title {
+      font-size: 38px;
+      padding-top: 111px;
+      transform: translateX(12.4%);
+    }
+    
+    &__desciption-body {
+      font-size: 24px;
+      margin-top: -19px;
+      transform: translateX(12.4%);
+    }
+    
+    &__gradient {
+      background-image: linear-gradient(to bottom, hsl(26, 14%, 78%) 23%, hsla(26, 14%, 78%, 0) 81%);
+      display: block;
+      height: 400px;
+      position: absolute;
+      transform: rotate(-90deg);
+      transform: translate(600px, -838px) rotate(-90deg);
+      width: 400px;
+      z-index: 0;
+    }
   }
 }
 
 .our-story {
-    margin-top: 17px;
-    border: solid 1px hsl(0, 0%, 92%);
-    background-color: hsl(0, 0%, 100%);
-    height: auto;
+  background-color: hsl(0, 0%, 100%);
+  border: solid 1px hsl(0, 0%, 92%);
+  height: auto;
+  margin-top: 17px;
 
-    &__title{
-        font-size: 22px;
-        margin-bottom: 11px;
-    }
+  &__title{
+    font-size: 22px;
+    margin-bottom: 11px;
+  }
+  
+  &__description > p:nth-child(2) {
+    font-size: 15px;
+    margin: 0px 8px 14px 8px;
+  }
     
-    &__description > p:nth-child(2) {
-        font-size: 15px;
-        margin: 0px 8px 14px 8px;
+  &__description > p:nth-child(3),  &__description > p:nth-child(4),
+  &__description > p:nth-child(5), &__description > p:nth-child(6) {
+    font-size: 15px;
+    margin: 14px 8px;
+  }
+
+  @media (min-width: 800px){  
+    height: auto;
+    margin: 17px auto 0 auto;
+    width: 95.1%;
+
+    &__title {
+      font-size: 30px;
     }
-      
+
+    &__description {
+      columns: 562px 2;
+      margin: auto 8.1% auto 8.1%;
+    }
+
+    &__description > p:nth-child(1), &__description > p:nth-child(2),
+    &__description > p:nth-child(4), &__description > p:nth-child(5){
+      font-size: 21px;
+      margin: none;
+      text-align: left;
+    }
+
     &__description > p:nth-child(3) {
-        font-size: 15px;
-        margin: 14px 8px;
+      font-size: 21px;
+      margin: none;
+      padding-top: 21px;
+      text-align: left;
     }
-    
-    &__description > p:nth-child(4) {
-        font-size: 15px;
-        margin: 14px 8px;
-    }
-    
-    &__description > p:nth-child(5) {
-        font-size: 15px;
-        margin: 14px 8px;
-    }
-    
-    &__description > p:nth-child(6) {
-        font-size: 15px;
-        margin: 14px 8px;
-    }
+  }
+  
+  @media (min-width:1430px){
+    height: 377px;
+  }
 }
 
 .next-story{
+  &__title{
+    font-size: 22px;
+    margin: 27px auto 14px auto;
+  }
+  
+  &__body {
+    margin: 0 8px 28px 8px;
+    font-size: 15px;
+  }
+  @media (min-width: 800px){  
+    display: inline-block;
+    height: 350px;
+    margin-top: 38px;
+    transform: translateY(-42px);
+    width: 684px;
 
-    &__title{
-        font-size: 22px;
-        margin: 27px auto 14px auto;
+    &__title {
+      font-size: 34px;
+      padding-top: 70px;
     }
     
     &__body {
-        margin: 0 8px 28px 8px;
-        font-size: 15px;
+      font-size: 22px;
+      margin: auto 83px;
     }
+  } 
 }
 
-.img-in-next-story{
-    width: 320px;
-    height: 250px;
+.next-story-img{
+  height: 250px;
+  width: 320px;
+
+  @media (min-width: 800px){ 
+    display: inline-block;
+    height: 350px;
+    margin-top: 38.5px;
+    width: 684px;
+  }
 }
 
 .desktop-images{
-    display: none;
+  display: none;
+
+  @media (min-width: 800px){  
+    display: block;
+  }  
+}
+
+.desktop-images img {
+  @media (min-width: 800px){  
+    height: 400px;
+    margin: 32.5px auto 42px auto;
+    width: 440px;
+  }
+}
+
+.desktop-images > img:nth-child(2) {
+  @media (min-width: 800px){  
+    margin-left: 24px;
+    margin-right: 24px;
+  }
 }
   
 //scroll up button
 .scroll-up {
-    background-color: hsl(0,0%,98%);
-    margin-bottom: 20px;
-    margin-top: 20px;
-    text-align: center;
-  
-    &__link{
-      text-decoration: none;
-      width: 150px;
-    }
-  
-    &__button {
-      background-color: hsl(212, 72%, 59%);
-      border-radius: 2px;
-      border: none;
-      color: #FFF;
-      font-size: 16px;
-      height: 40px;
-      padding-left: 28px;
-      text-align: left;
-      width: 150px;
-    }
-  
-    &__icon {
-      fill: #FFF;
-      height: 20px;
-      margin-right: -23px;
-      transform: translate(-46px,5px);
-    }
+  background-color: hsl(0,0%,98%);
+  margin-bottom: 20px;
+  margin-top: 20px;
+  text-align: center;
+
+  &__link{
+    text-decoration: none;
+    width: 150px;
   }
 
-@media (min-width: 800px){
-    .scroll-up {
-        display: none;
-    }
-    
-    .background{
-        height: auto;
-    }
-
-    .route {
-        display: flex;
-        font-size: 20px;
-        margin-left: 2.5%;
-        color: #637488;
-      }
-      .route:before {
-        color: hsl(212, 72%, 59%);
-        content: "HOME ";
-    }
-
-    .hero{
-        margin: 0 2.5%;
-        width: 95%;
-    }
-
-    .our-story {
-      height: auto;
-      width: 95.1%;
-      margin: 17px auto 0 auto;
-
-      &__title {
-          font-size: 30px;
-      }
-  
-      &__description {
-          columns: 562px 2;
-          margin: auto 8.1% auto 8.1%;
-      }
-  
-      &__description > p:nth-child(1) {
-          font-size: 21px;
-          text-align: left;
-          margin: none;
-      }
-      
-      &__description > p:nth-child(2) {
-          font-size: 21px;
-          text-align: left;
-          margin: none;
-      }
-      
-      &__description > p:nth-child(3) {
-          font-size: 21px;
-          text-align: left;
-          padding-top: 21px;
-          margin: none;
-      }
-      
-      &__description > p:nth-child(4) {
-          font-size: 21px;
-          text-align: left;
-          margin: none;
-      }
-      
-      &__description > p:nth-child(5) {
-          font-size: 21px;
-          text-align: left;
-          margin: none;
-      }
-    }
-  
-
-    .next-story {
-        margin-top: 38px;
-        width: 684px;
-        height: 350px;
-        transform: translateY(-42px);
-        display: inline-block;
-
-        &__title {
-        font-size: 34px;
-        padding-top: 70px;
-        }
-        
-        &__body {
-        font-size: 22px;
-        margin: auto 83px;
-        }
-    }  
-
-    .img-in-next-story {
-    width: 684px;
-    height: 350px;
-    display: inline-block;
-    margin-top: 38.5px;
-    }
-    
-    .desktop-images {
-        display: block;
-    }  
-    
-    .desktop-images img {
-        height: 400px;
-        width: 440px;
-        margin: 32.5px auto 42px auto;
-    }
- 
-  .desktop-images > img:nth-child(2) {
-    margin-left: 24px;
-    margin-right: 24px;
+  &__button {
+  background-color: hsl(212, 72%, 59%);
+  border-radius: 2px;
+  border: none;
+  color: #FFF;
+  font-size: 16px;
+  height: 40px;
+  padding-left: 28px;
+  text-align: left;
+  width: 150px;
   }
-  
-}
 
-@media (min-width:1000px){
-    .hero{
-        border-radius: 3px;
-        height: 400px;
+  &__icon {
+  fill: #FFF;
+  height: 20px;
+  margin-right: -23px;
+  transform: translate(-46px,5px);
+  }
 
-        &__description {
-            background-color: hsl(26, 14%, 78%);
-            width: 601px;
-            height: 400px;
-            position: relative;
-            padding: 0;
-            z-index: 99;
-            transform: translateY(-438px);
-        }
-        
-        &__image {
-            height: 400px;
-            width: 810px;
-            margin-left: auto;
-        }
-        
-        &__description-title {
-            font-size: 38px;
-            padding-top: 111px;
-            transform: translateX(12.4%);
-        }
-        
-        &__desciption-body {
-            font-size: 24px;
-            margin-top: -19px;
-            transform: translateX(12.4%);
-        }
-        
-        &__gradient {
-            display: block;
-            width: 400px;
-            height: 400px;
-            transform: rotate(-90deg);
-            background-image: linear-gradient(to bottom, hsl(26, 14%, 78%) 23%, hsla(26, 14%, 78%, 0) 81%);
-            position: absolute;
-            transform: translate(600px, -838px) rotate(-90deg);
-            z-index: 0;
-        }
-    }
-}
-
-@media (min-width:1430px){
-    .our-story {
-        height: 377px;
-    }
+  @media (min-width: 800px){
+    display: none;
+  }
 }
   

@@ -1,0 +1,24 @@
+<div class="desktop-images">
+  {% for block in section.blocks %}
+    <img src="{{ block.settings.desktop_image_1 | img_url: '800x' }}">
+  {% endfor %}
+</div>
+
+{% schema %}
+  {
+    "blocks": [
+      {
+        "type": "block_image",
+        "name": "Block image",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "desktop_image_1",
+            "label": "Desktop image 1"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

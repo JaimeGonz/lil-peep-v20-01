@@ -1,0 +1,22 @@
+<div class="next-story">
+    <p class="next-story__title">LOREM IPSUM DOLOR SUM</p>
+    <p class="next-story__body">
+            Vestibulum rutrum quam vitae fringilla tincidunt. Suspendisse nec tortor urna.
+            Ut laoreet sodales nisi, quis iaculis nulla iaculis vitae. Donec sagittis faucibus 
+            lacus eget blandit. Mauris vitae ultricies metus, at condimentum nulla. Donec quis ornare lacus. 
+            Etiam gravida mollis tortor quis porttitor. </p>
+</div>
+<img class="next-story-img" src="{{section.settings.next_story_img | img_url: '800x'}}">
+
+{% schema %}
+{
+  "name": "next-story-img",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "next_story_img",
+      "label": "Next story img"
+    }
+  ]
+}
+{% endschema %}
